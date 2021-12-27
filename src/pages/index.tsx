@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import Background from '@/components/Background';
 import Seo from '@/components/Seo';
 
 export default function Index() {
@@ -9,7 +10,11 @@ export default function Index() {
       <Seo />
 
       <main>
-        <section className=""></section>
+        <section className="">
+          <Background image="pattern.png" width={300} height={400}>
+            <div className="h-screen w-screen"></div>
+          </Background>
+        </section>
       </main>
     </>
   );

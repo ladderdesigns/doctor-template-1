@@ -12,10 +12,12 @@ export default function Hero({ title, description }: Props) {
       <div className="grid grid-cols-1 max-w-4xl mx-auto px-6">
         <div className="flex items-center justify-center text-white md:justify-end">
           <div className="my-auto p-4 w-full" id="landing-block">
-            <h2 className="font-medium leading-tight mt-16 pb-2 sm:text-3xl md:text-6xl lg:text-6xl xl:text-7xl">
+            <h2 className="font-medium leading-tight mt-16 pb-2 text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
               {title}
             </h2>
-            <h3 className="font-extralight text-4xl">{description}</h3>
+            <h3 className="font-extralight text-2xl md:text-2xl lg:text-3xl xl:text-4xl">
+              {description}
+            </h3>
           </div>
         </div>
       </div>

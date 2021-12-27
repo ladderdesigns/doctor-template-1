@@ -14,7 +14,7 @@ export default function ContactUs() {
         <section className="">
           <Hero
             title="Contact Us"
-            description="Redding’s premier cardiology services."
+            description="Redding’s premier cardiology services"
           />
         </section>
       </main>

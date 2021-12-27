@@ -13,8 +13,8 @@ export default function OurServices() {
       <main>
         <section className="">
           <Hero
-            title="Our Work"
-            description="Redding’s premier cardiology services."
+            title="Our Services"
+            description="Redding’s premier cardiology services"
           />
         </section>
       </main>

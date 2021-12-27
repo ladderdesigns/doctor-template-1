@@ -14,7 +14,7 @@ export default function AboutUs() {
         <section className="">
           <Hero
             title="About Us"
-            description="Redding’s premier cardiology services."
+            description="Redding’s premier cardiology services"
           />
         </section>
       </main>

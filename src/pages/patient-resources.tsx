@@ -14,7 +14,7 @@ export default function PatientResources() {
         <section className="">
           <Hero
             title="Patient Resources"
-            description="Redding’s premier cardiology services."
+            description="Redding’s premier cardiology services"
           />
         </section>
       </main>
