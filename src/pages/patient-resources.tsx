@@ -4,7 +4,7 @@ import Seo from '@/components/Seo';
 
 import Hero from '../components/Hero';
 
-export default function OurServices() {
+export default function PatientResources() {
   return (
     <>
       {/* <Seo templateTitle='Home' /> */}
@@ -13,7 +13,7 @@ export default function OurServices() {
       <main>
         <section className="">
           <Hero
-            title="Our Services"
+            title="Patient Resources"
             description="Redding’s premier cardiology services"
           />
         </section>

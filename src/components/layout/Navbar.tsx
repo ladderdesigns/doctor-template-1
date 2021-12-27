@@ -26,19 +26,19 @@ export default function Example() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch">
                 <div className="hidden items-center sm:flex sm:space-x-20">
                   <Link href="/our-services">
-                    <a className="border-white font-bold hover:text-gray-300 inline-flex items-center pt-1 px-1 text-md text-white underline">
+                    <a className="border-white focus:font-bold focus:underline hover:text-gray-300 inline-flex items-center pt-1 px-1 text-md text-white">
                       Our Services
                     </a>
                   </Link>
 
                   <Link href="/patient-resources">
-                    <a className="border-transparent hover:border-gray-300 hover:text-gray-300 inline-flex items-center pt-1 px-1 text-md text-white">
+                    <a className="border-transparent focus:font-bold focus:underline hover:border-gray-300 hover:text-gray-300 inline-flex items-center pt-1 px-1 text-md text-white">
                       Patient Resources
                     </a>
                   </Link>
                   <div>
                     <Link href="/">
-                      <a>
+                      <a className="hover:opacity-75">
                         <Image
                           src="/logo.svg"
                           alt="Chandramouli logo"
@@ -49,13 +49,13 @@ export default function Example() {
                     </Link>
                   </div>
                   <Link href="/about-us">
-                    <a className="border-transparent hover:border-gray-300 hover:text-gray-300 inline-flex items-center pt-1 px-1 text-md text-white">
+                    <a className="border-transparent focus:font-bold focus:underline hover:border-gray-300 hover:text-gray-300 inline-flex items-center pt-1 px-1 text-md text-white">
                       About Us
                     </a>
                   </Link>
 
                   <Link href="/contact-us">
-                    <a className="border-transparent hover:border-gray-300 hover:text-gray-300 inline-flex items-center pt-1 px-1 text-md text-white">
+                    <a className="border-transparent focus:font-bold focus:underline hover:border-gray-300 hover:text-gray-300 inline-flex items-center pt-1 px-1 text-md text-white">
                       Contact Us
                     </a>
                   </Link>

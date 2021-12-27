@@ -175,7 +175,10 @@ export default function Footer() {
         <div className="border-gray-200 border-t mt-12 pt-8">
           <p className="text-base text-gray-400 xl:text-center">
             &copy; Created by{` `}2021{` `}
-            <a className="font-bold underline" href="https://ladderdesigns.co">
+            <a
+              className="font-bold hover:opacity-75 underline"
+              href="https://ladderdesigns.co"
+            >
               Ladder Designs
             </a>
             . All rights reserved.
