@@ -2,6 +2,8 @@ import * as React from 'react';
 
 import Seo from '@/components/Seo';
 
+import Hero from '../components/Hero';
+
 export default function HomePage() {
   return (
     <>
@@ -9,7 +11,9 @@ export default function HomePage() {
       <Seo />
 
       <main>
-        <section className="bg-white h-screen" />
+        <section className="bg-white h-screen">
+          <Hero />
+        </section>
       </main>
     </>
   );
