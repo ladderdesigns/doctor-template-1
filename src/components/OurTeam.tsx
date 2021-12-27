@@ -1,9 +1,7 @@
-import Image from 'next/image';
-
 const people = [
   {
-    name: 'Leslie Alexander',
-    role: 'Co-Founder / CEO',
+    name: 'BV Chandramouli',
+    role: 'Cardiologist',
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
@@ -11,8 +9,8 @@ const people = [
     linkedinUrl: '#',
   },
   {
-    name: 'Leslie Alexander',
-    role: 'Co-Founder / CEO',
+    name: 'Michael Foster',
+    role: "Physician's Assistant",
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
@@ -20,8 +18,8 @@ const people = [
     linkedinUrl: '#',
   },
   {
-    name: 'Leslie Alexander',
-    role: 'Co-Founder / CEO',
+    name: 'Dries Vincent',
+    role: 'Receptionist',
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
@@ -40,9 +38,8 @@ export default function OurTeam() {
               About Us
             </h2>
             <p className="text-gray-500 text-xl">
-              Nulla quam felis, enim faucibus proin velit, ornare id pretium.
-              Augue ultrices sed arcu condimentum vestibulum suspendisse.
-              Volutpat eu faucibus vivamus eget bibendum cras.
+              Our practice was founded in 1990. Come meet our family like we
+              will meet yours.
             </p>
           </div>
           <div className="lg:col-span-2">
@@ -53,16 +50,17 @@ export default function OurTeam() {
               {people.map((person) => (
                 <li key={person.name} className="sm:py-8">
                   <div className="space-y-4 sm:gap-6 sm:grid sm:grid-cols-3 sm:items-start sm:space-y-0">
-                    <div className="aspect-h-2 aspect-w-3 sm:aspect-h-4 sm:aspect-w-3">
+                    <div className="aspect-h-2 aspect-w-3 bg-gray-400 sm:aspect-h-4 sm:aspect-w-3">
                       <div className="object-cover rounded-lg shadow-lg">
-                        <Image layout="fill" src={person.imageUrl} alt="" />
+                        {/** TODO: Fix the image aspect ratio */}
+                        {/* <Image src={person.imageUrl} alt="" layout="fill"></Image> */}
                       </div>
                     </div>
                     <div className="sm:col-span-2">
                       <div className="space-y-4">
-                        <div className="font-medium leading-6 space-y-1 text-lg">
-                          <h3>{person.name}</h3>
-                          <p className="text-indigo-600">{person.role}</p>
+                        <div className="font-medium leading-6 space-y-1">
+                          <h3 className="text-2xl">{person.name}</h3>
+                          <p className="text-blue-800 text-xl">{person.role}</p>
                         </div>
                         <div className="text-lg">
                           <p className="text-gray-500">{person.bio}</p>

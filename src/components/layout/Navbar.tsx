@@ -60,27 +60,27 @@ export default function Navbar() {
                       Patient Resources
                     </a>
                   </Link>
-                  <div>
-                    <Link href="/">
-                      <a className="hover:opacity-75">
-                        <Image
-                          src="/logo.svg"
-                          alt="Chandramouli logo"
-                          width={75}
-                          height={75}
-                        ></Image>
-                      </a>
-                    </Link>
-                  </div>
+
+                  <Link href="/">
+                    <a className="hover:opacity-75">
+                      <Image
+                        src="/logo.svg"
+                        alt="Chandramouli logo"
+                        width={65}
+                        height={65}
+                      ></Image>
+                    </a>
+                  </Link>
+
                   <Link href="/about-us">
                     <a className="border-transparent focus:font-bold focus:underline hover:border-gray-300 hover:text-gray-300 inline-flex items-center pt-1 px-1 text-md text-white">
                       About Us
                     </a>
                   </Link>
 
-                  <Link href="/contact-us">
+                  <Link href="/contact">
                     <a className="border-transparent focus:font-bold focus:underline hover:border-gray-300 hover:text-gray-300 inline-flex items-center pt-1 px-1 text-md text-white">
-                      Contact Us
+                      Contact
                     </a>
                   </Link>
                 </div>
