@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Seo from '@/components/Seo';
+import Seo from '@/components/Seo.tsx';
 
 export default function HomePage() {
   return (
@@ -9,7 +9,7 @@ export default function HomePage() {
       <Seo />
 
       <main>
-        <section className="bg-white h-screen"></section>
+        <section className="bg-white h-screen" />
       </main>
     </>
   );
