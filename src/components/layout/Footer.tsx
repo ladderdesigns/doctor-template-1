@@ -1,4 +1,5 @@
-/* This example requires Tailwind CSS v2.0+ */
+import Image from 'next/image';
+
 const navigation = {
   links: [
     { name: `Home`, href: `#` },
@@ -103,13 +104,14 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="xl:gap-8 xl:grid xl:grid-cols-3">
           <div className="space-y-8 xl:col-span-1">
-            <img
-              className="h-24 w-24"
-              src={'/logo.svg'}
+            <Image
+              width={100}
+              height={100}
+              src="/logo.svg"
               alt="Chandramouli logo"
             />
             <p className="text-base text-gray-500">
-              A healthy heart makes a healthy life.
+              A healthy heart is a happy life
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (

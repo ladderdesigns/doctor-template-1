@@ -1,13 +1,15 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { Disclosure } from '@headlessui/react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-white shadow">
+    <Disclosure as="nav" className="bg-blue-800 shadow">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-            <div className="flex h-24 justify-between relative">
+            <div className="flex h-32 justify-between relative">
               <div className="absolute flex inset-y-0 items-center left-0 sm:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button className="focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-inset hover:bg-gray-100 hover:text-gray-500 inline-flex items-center justify-center p-2 rounded-md text-gray-400">
@@ -22,46 +24,42 @@ export default function Example() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch">
-                <div className="hidden items-center sm:flex sm:ml-6 sm:space-x-8">
-                  {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                  <a
-                    href="/our-services"
-                    className="border-b-2 border-indigo-500 font-medium inline-flex items-center pt-1 px-1 text-gray-900 text-sm"
-                  >
-                    Our Services
-                  </a>
-                  <a
-                    href="/patient-resources"
-                    className="border-b-2 border-transparent font-medium hover:border-gray-300 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-sm"
-                  >
-                    Patient Resources
-                  </a>
-                  <img
-                    src={'/logo.svg'}
-                    alt="Chandramouli logo"
-                    className="h-12 w-12"
-                  />
-                  <a
-                    href="/about-us"
-                    className="border-b-2 border-transparent font-medium hover:border-gray-300 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-sm"
-                  >
-                    About Us
-                  </a>
-                  <a
-                    href="/contact-us"
-                    className="border-b-2 border-transparent font-medium hover:border-gray-300 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-sm"
-                  >
-                    Contact Us
-                  </a>
+                <div className="hidden items-center sm:flex sm:space-x-20">
+                  <Link href="/our-services">
+                    <a className="border-white font-bold hover:text-gray-300 inline-flex items-center pt-1 px-1 text-md text-white underline">
+                      Our Services
+                    </a>
+                  </Link>
+
+                  <Link href="/patient-resources">
+                    <a className="border-transparent hover:border-gray-300 hover:text-gray-300 inline-flex items-center pt-1 px-1 text-md text-white">
+                      Patient Resources
+                    </a>
+                  </Link>
+                  <div>
+                    <Link href="/">
+                      <a>
+                        <Image
+                          src="/logo.svg"
+                          alt="Chandramouli logo"
+                          width={75}
+                          height={75}
+                        ></Image>
+                      </a>
+                    </Link>
+                  </div>
+                  <Link href="/about-us">
+                    <a className="border-transparent hover:border-gray-300 hover:text-gray-300 inline-flex items-center pt-1 px-1 text-md text-white">
+                      About Us
+                    </a>
+                  </Link>
+
+                  <Link href="/contact-us">
+                    <a className="border-transparent hover:border-gray-300 hover:text-gray-300 inline-flex items-center pt-1 px-1 text-md text-white">
+                      Contact Us
+                    </a>
+                  </Link>
                 </div>
-              </div>
-              <div className="absolute flex inset-y-0 items-center pr-2 right-0 sm:inset-auto sm:ml-6 sm:pr-0 sm:static">
-                <button
-                  type="button"
-                  className="bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:text-gray-500 p-1 rounded-full text-gray-400"
-                >
-                  <span className="sr-only">View notifications</span>
-                </button>
               </div>
             </div>
           </div>
