@@ -9,7 +9,7 @@ export default function Index() {
       <Seo />
 
       <main>
-        <section className="bg-white h-screen" />
+        <section className=""></section>
       </main>
     </>
   );
