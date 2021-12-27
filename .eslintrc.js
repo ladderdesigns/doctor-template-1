@@ -19,6 +19,7 @@ module.exports = {
 
     // Sort
     'simple-import-sort/exports': 'warn',
+    'react/display-name': 'off',
     'simple-import-sort/imports': [
       'warn',
       {
