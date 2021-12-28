@@ -32,12 +32,12 @@ const people = [
 
 export default function OurTeam() {
   return (
-    <div className="bg-white max-w-7xl mx-auto my-10 my-auto rounded-xl">
-      <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-24">
+    <div className="bg-white max-w-7xl mx-auto my-11 my-auto rounded-xl shadow-xl">
+      <div className="mx-auto px-4 py-12 rounded-xl sm:px-6 lg:px-8 lg:py-24">
         <div className="space-y-12 lg:gap-8 lg:grid lg:grid-cols-3 lg:space-y-0">
           <div className="space-y-5 sm:space-y-4">
-            <h2 className="font-medium text-3xl tracking-tight sm:text-4xl">
-              Our Team
+            <h2 className="font-semibold text-3xl tracking-tight sm:text-4xl">
+              Our team
             </h2>
             <p className="text-gray-500 text-xl">
               Nulla quam felis, enim faucibus proin velit, ornare id pretium.
@@ -62,7 +62,7 @@ export default function OurTeam() {
                       />
                     </div>
                     <div className="font-medium leading-6 space-y-1 text-lg">
-                      <h3>{person.name}</h3>
+                      <h3 className="text-2xl">{person.name}</h3>
                       <p className="text-blue-800">{person.role}</p>
                     </div>
                     <div className="text-lg">

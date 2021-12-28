@@ -15,7 +15,7 @@ export default function Hero({ title, description }: Props) {
             <h2 className="font-medium leading-tight mt-16 pb-2 text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl">
               {title}
             </h2>
-            <h3 className="font-extralight text-2xl md:text-3xl lg:text-3xl xl:text-4xl">
+            <h3 className="font-light text-2xl md:text-3xl lg:text-3xl xl:text-4xl">
               {description}
             </h3>
           </div>
