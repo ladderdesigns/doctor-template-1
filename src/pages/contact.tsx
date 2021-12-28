@@ -1,7 +1,9 @@
 import * as React from 'react';
 
+import Background from '@/components/Background';
 import Seo from '@/components/Seo';
 
+import ContactFrom from '../components/ContactForm';
 import Hero from '../components/Hero';
 
 export default function Contact() {
@@ -16,6 +18,9 @@ export default function Contact() {
             title="Contact"
             description="Redding’s premier cardiology services"
           />
+          <Background image="pattern.png" width={300} height={400}>
+            <ContactFrom />
+          </Background>
         </section>
       </main>
     </>
