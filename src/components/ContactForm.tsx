@@ -7,7 +7,7 @@ export default function Example() {
         <div className="absolute bg-gray-50 inset-y-0 left-0 w-1/2" />
       </div>
       <div className="mx-auto relative lg:grid lg:grid-cols-5">
-        <div className="bg-white drop-shadow-sm px-4 py-16 rounded-lg sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+        <div className="bg-white drop-shadow-lg px-4 py-16 rounded-xl sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
           <div className="max-w-lg mx-auto">
             <h2 className="font-semibold text-3xl text-gray-900 tracking-tight sm:text-4xl">
               Get in touch
@@ -88,7 +88,7 @@ export default function Example() {
                   name="full-name"
                   id="full-name"
                   autoComplete="name"
-                  className="block border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 placeholder-gray-500 px-4 py-3 rounded-md shadow-sm w-full"
+                  className="block border-gray-300 focus:border-blue-800 focus:ring-indigo-500 placeholder-gray-500 px-4 py-3 rounded-md shadow-sm w-full"
                   placeholder="Full name"
                 />
               </div>
@@ -101,7 +101,7 @@ export default function Example() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="block border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 placeholder-gray-500 px-4 py-3 rounded-md shadow-sm w-full"
+                  className="block border-gray-300 focus:border-blue-800 focus:ring-indigo-500 placeholder-gray-500 px-4 py-3 rounded-md shadow-sm w-full"
                   placeholder="Email"
                 />
               </div>
@@ -114,7 +114,7 @@ export default function Example() {
                   name="phone"
                   id="phone"
                   autoComplete="tel"
-                  className="block border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 placeholder-gray-500 px-4 py-3 rounded-md shadow-sm w-full"
+                  className="block border-gray-300 focus:border-blue-800 focus:ring-indigo-500 placeholder-gray-500 px-4 py-3 rounded-md shadow-sm w-full"
                   placeholder="Phone"
                 />
               </div>
@@ -126,7 +126,7 @@ export default function Example() {
                   id="message"
                   name="message"
                   rows={4}
-                  className="block border border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 placeholder-gray-500 px-4 py-3 rounded-md shadow-sm w-full"
+                  className="block border border-gray-300 focus:border-blue-800 focus:ring-indigo-500 placeholder-gray-500 px-4 py-3 rounded-md shadow-sm w-full"
                   placeholder="Message"
                   defaultValue={''}
                 />

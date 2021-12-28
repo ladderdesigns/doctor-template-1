@@ -4,6 +4,7 @@ import Background from '@/components/Background';
 import Seo from '@/components/Seo';
 
 import ContactFrom from '../components/ContactForm';
+import FAQ from '../components/FAQ';
 import Hero from '../components/Hero';
 
 export default function Contact() {
@@ -20,6 +21,7 @@ export default function Contact() {
           />
           <Background image="pattern.png" width={300} height={400}>
             <ContactFrom />
+            <FAQ />
           </Background>
         </section>
       </main>
