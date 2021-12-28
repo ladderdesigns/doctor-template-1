@@ -165,7 +165,7 @@ export default function Footer() {
                   href="tel:530-123-4567"
                   className="hover:text-gray-900 text-base text-gray-500 underline"
                 >
-                  530-123-4567
+                  +1 (530) 244-4471
                 </a>
               </div>
             </div>
