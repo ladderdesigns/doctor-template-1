@@ -7,7 +7,7 @@ export default function Example() {
         <div className="absolute bg-gray-50 inset-y-0 left-0 w-1/2" />
       </div>
       <div className="mx-auto relative lg:grid lg:grid-cols-5">
-        <div className="bg-white drop-shadow-lg px-4 py-16 rounded-xl sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+        <div className="bg-white px-4 py-16 rounded-xl shadow-xl sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
           <div className="max-w-lg mx-auto">
             <h2 className="font-semibold text-3xl text-gray-900 tracking-tight sm:text-4xl">
               Get in touch
@@ -76,7 +76,7 @@ export default function Example() {
             </p>
           </div>
         </div>
-        <div className="bg-white px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8 lg:py-24 xl:pl-12">
+        <div className="bg-white px-4 py-16 rounded-xl shadow-xl sm:px-6 lg:col-span-3 lg:px-8 lg:py-24 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
             <form action="#" method="POST" className="gap-y-6 grid grid-cols-1">
               <div>
