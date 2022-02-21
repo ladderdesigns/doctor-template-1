@@ -1,7 +1,5 @@
 import Image from 'next/image';
 
-import { attributes } from '../../content/about-us.md';
-
 export default function OurTeam() {
   const { employees } = attributes;
   return (
