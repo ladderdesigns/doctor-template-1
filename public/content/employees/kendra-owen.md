@@ -1,5 +1,6 @@
 ---
 name: Kendra Owen
+role: Physican Assistant
 id: 2
 creds: PA-C
 bio: Kendra is a PA.

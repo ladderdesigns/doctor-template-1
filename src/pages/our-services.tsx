@@ -4,16 +4,27 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import * as React from 'react';
 
-import Seo from '@/components/Seo';
-
 import Background from '../components/Background';
 import Hero from '../components/Hero';
+import Seo from '../components/Seo';
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function OurServices({ services }) {
+interface Props {
+  services: [
+    {
+      data: {
+        name: string;
+        id: number;
+        shortdesc: string;
+      };
+    },
+  ];
+}
+
+export default function OurServices({ services }: Props) {
   return (
     <>
       {/* <Seo templateTitle='Home' /> */}
@@ -34,7 +45,11 @@ export default function OurServices({ services }) {
                   </h2>
                   <dl className="divide-gray-200 divide-y mt-6 space-y-6">
                     {services.map((service) => (
-                      <Disclosure as="div" key={service.slug} className="pt-6">
+                      <Disclosure
+                        as="div"
+                        key={service.data.id}
+                        className="pt-6"
+                      >
                         {({ open }) => (
                           <>
                             <dt className="text-lg">

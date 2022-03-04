@@ -1,12 +1,10 @@
 ---
 name: B.V. Chandramouli
+role: Cardiologist
 id: 0
 creds: MD, MPH, FACC, FSCAI
 bio: >-
-  Dr. Chandramouli has been in cardiovascular practice in Redding since 1998. He
-  was awarded  National merit  scholarship during his college years.He graduated
-  from prestigious Bangalore medical College in South India in 1982 as  a top 10
-  graduate.
+  Dr. Chandramouli has been in cardiovascular practice in Redding since 1998. He was awarded the National merit  scholarship during his college years. He graduated from prestigious Bangalore medical College in South India in 1982 as  a top 10 graduate.
 
 
   He completed his internal medicine residency in 1985 securing Second Rank to the University. He worked as medical officer/internist in National Institute of mental health and neurosciences from 1985-1990.
