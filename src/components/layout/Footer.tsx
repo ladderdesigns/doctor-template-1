@@ -107,9 +107,9 @@ export default function Footer() {
         <div className="xl:gap-8 xl:grid xl:grid-cols-3">
           <div className="space-y-8 xl:col-span-1">
             <Image
-              width={100}
-              height={100}
-              src="/logo.svg"
+              width={150}
+              height={150}
+              src="/logo2.svg"
               alt="Chandramouli logo"
             />
             <p className="text-base text-gray-500">

@@ -16,21 +16,21 @@ export default function Example() {
               <div className="flex">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="block h-8 w-auto lg:hidden"
-                    src="/logo.svg"
+                    className="block h-12 w-auto lg:hidden"
+                    src="/logo2.svg"
                     alt="Workflow"
                   />
                   <img
-                    className="h-8 hidden w-auto lg:block"
-                    src="/logo.svg"
+                    className="h-12 hidden w-auto lg:block"
+                    src="/logo2.svg"
                     alt="Workflow"
                   />
                 </div>
                 <div className="hidden sm:flex sm:ml-6 sm:space-x-8">
-                  {/* Current: "border-blue-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
+                  {/* Current: "border-red-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <a
                     href="our-services"
-                    className="border-b-2 border-blue-500 font-medium inline-flex items-center pt-1 px-1 text-gray-900 text-sm"
+                    className="border-b-2 border-red-500 font-medium inline-flex items-center pt-1 px-1 text-gray-900 text-sm"
                   >
                     Our Services
                   </a>
@@ -56,7 +56,7 @@ export default function Example() {
               </div>
               <div className="-mr-2 flex items-center sm:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-inset hover:bg-gray-100 hover:text-gray-500 inline-flex items-center justify-center p-2 rounded-md text-gray-400">
+                <Disclosure.Button className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500 hover:bg-gray-100 hover:text-gray-500 inline-flex items-center justify-center p-2 rounded-md text-gray-400">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -70,11 +70,11 @@ export default function Example() {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="pb-3 pt-2 space-y-1">
-              {/* Current: "bg-blue-50 border-blue-500 text-blue-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
+              {/* Current: "bg-red-50 border-red-500 text-red-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
               <Disclosure.Button
                 as="a"
                 href="our-services"
-                className="bg-blue-50 block border-blue-500 border-l-4 font-medium pl-3 pr-4 py-2 text-base text-blue-700"
+                className="bg-red-50 block border-l-4 border-red-500 font-medium pl-3 pr-4 py-2 text-base text-red-700"
               >
                 Our Services
               </Disclosure.Button>

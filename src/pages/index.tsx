@@ -13,7 +13,7 @@ export default function Index() {
       <main>
         <section className="">
           <Background image="pattern2.png" width={300} height={300}>
-            <div className="bg-blue-800 py-16 w-full">
+            <div className="bg-red-900 py-16 w-full">
               <div className="-pb-24 max-w-md mx-auto px-4 relative sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="relative">
                   <div className="absolute bg-gradient-to-t from-black h-full opacity-40 rounded-xl via-gray-500 w-full" />
@@ -35,7 +35,7 @@ export default function Index() {
             </div>
 
             <div className="bg-transparent h-screen">
-              <div className="-pb-24 bg-blue-500 h-24 max-w-md mx-auto px-4 relative rounded-3xl sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"></div>
+              <div className="-pb-24 bg-red-500 h-24 max-w-md mx-auto px-4 relative rounded-3xl sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"></div>
             </div>
           </Background>
         </section>
