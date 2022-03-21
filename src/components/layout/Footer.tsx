@@ -115,7 +115,7 @@ export default function Footer() {
             <p className="text-base text-gray-500">
               A healthy heart is a happy life
             </p>
-            <div className="flex space-x-6">
+            {/* <div className="flex space-x-6">
               {navigation.social.map((item) => (
                 <a
                   key={item.name}
@@ -126,9 +126,9 @@ export default function Footer() {
                   <item.icon className="h-6 w-6" aria-hidden="true" />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
-          <div className="gap-8 grid grid-cols-2 mt-12 xl:col-span-2 xl:mt-0">
+          <div className="gap-8 grid grid-cols-1 mt-12 md:grid-cols-2 xl:col-span-2 xl:mt-0">
             <div className="md:gap-8 md:grid md:grid-cols-2">
               <div>
                 <h3 className="font-semibold text-gray-400 text-sm tracking-wider uppercase">
@@ -153,6 +153,8 @@ export default function Footer() {
                 </h3>
                 <address className="mb-12 mt-4 text-base text-gray-500">
                   1555 East St STE 100 Redding, California 96001
+                  <br />
+                  M-F 9:00AM - 5:00PM
                 </address>
                 <a
                   href="mailto:info@drchandramouli.com"
@@ -169,8 +171,12 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div className="space-y-8 xl:col-span-1">
-              <div className="bg-gray-400 h-64 hidden ml-auto my-auto w-64 xl:block"></div>
+            <div className="space-y-8 md:ml-8 xl:col-span-1">
+              <iframe
+                frameBorder="0"
+                className="h-64 overflow-hidden w-64"
+                src="https://www.google.com/maps/embed/v1/place?q=1555+East+St+Redding,+California+96001&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              ></iframe>
             </div>
           </div>
         </div>
