@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { SVGProps } from 'react';
 
 const navigation = {
@@ -106,12 +107,16 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="xl:gap-8 xl:grid xl:grid-cols-3">
           <div className="space-y-8 xl:col-span-1">
-            <Image
-              width={150}
-              height={150}
-              src="/logo2.svg"
-              alt="Chandramouli logo"
-            />
+            <Link href="/">
+              <a>
+                <Image
+                  width={150}
+                  height={150}
+                  src="/logo2.svg"
+                  alt="Chandramouli logo"
+                />
+              </a>
+            </Link>
             <p className="text-base text-gray-500">
               A healthy heart is a happy life
             </p>
@@ -120,10 +125,10 @@ export default function Footer() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="hover:text-gray-500 text-gray-400"
+                  className="text-gray-400 hover:text-gray-500"
                 >
                   <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
+                  <item.icon className="w-6 h-6" aria-hidden="true" />
                 </a>
               ))}
             </div> */}
@@ -154,7 +159,11 @@ export default function Footer() {
                 <address className="mb-12 mt-4 text-base text-gray-500">
                   1555 East St STE 100 Redding, California 96001
                   <br />
-                  M-F 9:00AM - 5:00PM
+                  <p className="mt-2">
+                    Mon - Th: 8 AM - 12:30 PM, 1:30 PM - 5 PM{' '}
+                  </p>
+                  <p>Fri: 9 AM - 12 PM </p>
+                  <p>Sat - Sun: Closed </p>
                 </address>
                 <a
                   href="mailto:info@drchandramouli.com"
@@ -182,7 +191,7 @@ export default function Footer() {
         </div>
         <div className="border-gray-200 border-t mt-12 pt-8">
           <p className="text-base text-gray-400 xl:text-center">
-            &copy; Created by{` `}2021{` `}
+            &copy; Created by{` `}2022{` `}
             <a
               className="font-bold hover:opacity-75 underline"
               href="https://ladderdesigns.co"

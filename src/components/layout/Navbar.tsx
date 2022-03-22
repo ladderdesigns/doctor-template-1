@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-blue-800 shadow">
+    <Disclosure as="nav" className="bg-red-800 shadow">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">

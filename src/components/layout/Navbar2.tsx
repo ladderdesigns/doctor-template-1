@@ -1,10 +1,8 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Example() {
   return (
@@ -15,40 +13,55 @@ export default function Example() {
             <div className="flex h-16 justify-between">
               <div className="flex">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="block h-12 w-auto lg:hidden"
-                    src="/logo2.svg"
-                    alt="Workflow"
-                  />
-                  <img
-                    className="h-12 hidden w-auto lg:block"
-                    src="/logo2.svg"
-                    alt="Workflow"
-                  />
+                  <div className="h-12 hidden w-auto lg:block">
+                    <Link href="/">
+                      <a>
+                        <Image
+                          src="/logo2.svg"
+                          alt="logo"
+                          width={50}
+                          height={50}
+                        />
+                      </a>
+                    </Link>
+                  </div>
+
+                  <div className="block h-12 w-auto lg:hidden">
+                    <Link href="/">
+                      <a>
+                        <Image
+                          src="/logo2.svg"
+                          alt="logo"
+                          width={50}
+                          height={50}
+                        />
+                      </a>
+                    </Link>
+                  </div>
                 </div>
                 <div className="hidden sm:flex sm:ml-6 sm:space-x-8">
                   {/* Current: "border-red-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <a
                     href="our-services"
-                    className="border-b-2 border-red-500 font-medium inline-flex items-center pt-1 px-1 text-gray-900 text-sm"
+                    className="border-b-2 focus:text-gray-700 font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-sm"
                   >
                     Our Services
                   </a>
                   <a
                     href="patient-resources"
-                    className="border-b-2 border-transparent font-medium hover:border-gray-300 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-sm"
+                    className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-sm"
                   >
                     Patient Resources
                   </a>
                   <a
                     href="about-us"
-                    className="border-b-2 border-transparent font-medium hover:border-gray-300 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-sm"
+                    className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-sm"
                   >
                     About Us
                   </a>
                   <a
                     href="contact"
-                    className="border-b-2 border-transparent font-medium hover:border-gray-300 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-sm"
+                    className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-sm"
                   >
                     Contact
                   </a>
