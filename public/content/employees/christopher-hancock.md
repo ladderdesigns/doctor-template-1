@@ -2,6 +2,7 @@
 name: Christopher Hancock
 role: Nurse Practioner
 id: 1
+slug: christopher-hancock
 creds: RN, MSN, FNP-BC
 bio: Chris is an NP.
 shortbio: Chris is an NP.

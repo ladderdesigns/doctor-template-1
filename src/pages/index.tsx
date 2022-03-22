@@ -25,18 +25,31 @@ export default function Index() {
                     {' '}
                     Dr. B. V. Chandramouli{' '}
                   </h2>
-                  <h2 className="absolute bottom-1 font-light left-4 text-lg text-white md:bottom-5 md:left-8 md:text-2xl lg:text-3xl">
+                  <h3 className="absolute bottom-1 font-light left-4 text-lg text-white md:bottom-5 md:left-8 md:text-2xl lg:text-3xl">
                     {' '}
                     Redding&apos;s Premier Cardiology Services{' '}
-                  </h2>
+                  </h3>
                 </div>
               </div>
             </div>
 
-            <div className="bg-transparent">
-              <div className="bg-red-800 h-96 max-w-md mt-24 mx-auto px-4 relative rounded-3xl sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"></div>
-              <div className="bg-red-800 h-96 max-w-md mt-24 mx-auto px-4 relative rounded-3xl sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"></div>
-              <div className="bg-red-800 h-96 max-w-md mb-24 mt-24 mx-auto px-4 relative rounded-3xl sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"></div>
+            <div className="bg-transparent w-full">
+              <div className="max-w-md mx-auto px-4 py-8 relative sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+                <div className="bg-white grid grid-cols-1 h-24 p-4 relative rounded-xl sm:grid-cols-2">
+                  <div className=""> Lucas </div>
+                  <div className=""> Jacob </div>
+                </div>
+              </div>
+              <div className="max-w-md mx-auto px-4 py-8 relative sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+                <div className="bg-white h-24 p-4 relative rounded-xl">
+                  Lucas
+                </div>
+              </div>
+              <div className="max-w-md mx-auto px-4 py-8 relative sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+                <div className="bg-white h-24 p-4 relative rounded-xl">
+                  Lucas
+                </div>
+              </div>
             </div>
           </Background>
         </section>

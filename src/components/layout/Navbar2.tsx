@@ -41,18 +41,23 @@ export default function Example() {
                 </div>
                 <div className="hidden sm:flex sm:ml-6 sm:space-x-8">
                   {/* Current: "border-red-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                  <a
-                    href="our-services"
-                    className="border-b-2 focus:text-gray-700 font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-sm"
-                  >
-                    Our Services
-                  </a>
-                  <a
-                    href="patient-resources"
-                    className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-sm"
-                  >
-                    Patient Resources
-                  </a>
+                  <Link href="/our-services">
+                    <a
+                      href="our-services"
+                      className="border-b-2 focus:text-gray-700 font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-sm"
+                    >
+                      Our Services
+                    </a>
+                  </Link>
+                  <Link href="/patient-resources">
+                    <a
+                      href="patient-resources"
+                      className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-sm"
+                    >
+                      Patient Resources
+                    </a>
+                  </Link>
+
                   <a
                     href="about-us"
                     className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-sm"

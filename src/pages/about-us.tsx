@@ -1,6 +1,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import Image from 'next/image';
+import Link from 'next/link';
 import * as React from 'react';
 
 import Background from '../components/Background';
@@ -14,6 +15,7 @@ interface Props {
         name: string;
         role: string;
         id: number;
+        slug: string;
         creds: string;
         bio: string;
         shortbio: string;
@@ -36,9 +38,9 @@ export default function AboutUs({ employees }: Props) {
             title="About Us"
             description="Redding’s premier cardiology services"
           />
-          <Background image="pattern.png" width={300} height={400}>
-            <div className="bg-white max-w-7xl mx-auto my-11 my-auto rounded-xl shadow-xl">
-              <div className="mx-auto px-4 py-12 rounded-xl sm:px-6 lg:px-8 lg:py-24">
+          <Background image="pattern2.png" width={300} height={300}>
+            <div className="my-auto py-16 rounded-xl shadow-xl w-full">
+              <div className="bg-white mx-12 px-4 py-8 relative sm:max-w-3xl sm:px-6 md:mx-auto lg:max-w-5xl lg:px-8">
                 <div className="space-y-12 lg:gap-8 lg:grid lg:grid-cols-3 lg:space-y-0">
                   <div className="space-y-5 sm:space-y-4">
                     <h2 className="font-semibold text-3xl tracking-tight sm:text-4xl">
@@ -58,7 +60,11 @@ export default function AboutUs({ employees }: Props) {
                     >
                       {employees.map((employee, key) => (
                         <li key={key}>
-                          <div className="space-y-4">
+                          <div
+                            className={
+                              employee.data.id == 0 ? 'space-y-8' : 'space-y-4'
+                            }
+                          >
                             <div className="aspect-h-2 aspect-w-3">
                               <Image
                                 src={employee.data.img}
@@ -75,8 +81,15 @@ export default function AboutUs({ employees }: Props) {
                             </div>
                             <div className="text-lg">
                               <p className="text-gray-500">
-                                {employee.data.bio}
+                                {employee.data.shortbio}
                               </p>
+                              {employee.data.bio && (
+                                <Link href={'/about-us/' + employee.data.slug}>
+                                  <a className="text-blue-500 underline">
+                                    Read more
+                                  </a>
+                                </Link>
+                              )}
                             </div>
                           </div>
                         </li>

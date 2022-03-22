@@ -36,11 +36,11 @@ export default function OurServices({ services }: Props) {
             title="Our Services"
             description="Redding’s premier cardiology services"
           />
-          <Background image="pattern.png" width={300} height={400}>
-            <div className="bg-white max-w-7xl mx-auto my-10 rounded-xl">
-              <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-                <div className="divide-gray-200 divide-y-2 max-w-3xl mx-auto">
-                  <h2 className="font-semibold text-3xl text-center tracking-tight sm:text-4xl">
+          <Background image="pattern2.png" width={300} height={300}>
+            <div className="py-16 w-full">
+              <div className="max-w-md mx-auto px-4 py-8 relative sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+                <div className="bg-white divide-gray-200 divide-y-2 max-w-3xl mx-auto p-6 relative rounded-xl">
+                  <h2 className="font-semibold text-2xl text-center tracking-tight sm:text-3xl">
                     What we provide
                   </h2>
                   <dl className="divide-gray-200 divide-y mt-6 space-y-6">

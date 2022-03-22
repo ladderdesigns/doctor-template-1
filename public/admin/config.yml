@@ -13,6 +13,7 @@ collections:
     fields:
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'ID', name: 'id', widget: 'number' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
       - { label: 'Credentials', name: 'creds', widget: 'string' }
       - { label: 'Biography', name: 'bio', widget: 'markdown' }
       - { label: 'Short Biography', name: 'shortbio', widget: 'string' }
