@@ -24,6 +24,11 @@ export default function PatientResources() {
       name: 'nuclear-stress-test',
       href: '/patient-resources/nuclear-stress-test.pdf',
     },
+    {
+      id: 3,
+      name: 'office-directions',
+      href: '/patient-resources/office-directions.pdf',
+    },
   ];
 
   return (

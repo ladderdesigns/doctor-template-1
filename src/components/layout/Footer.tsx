@@ -9,6 +9,8 @@ const navigation = {
     { name: `Patient Resources`, href: `/patient-resources` },
     { name: `About Us`, href: `/about-us` },
     { name: `Contact`, href: `/contact` },
+    { name: `FAQ`, href: `/contact/faq` },
+    { name: `New Patient Forms`, href: `/patient-resources/new-patient-forms` },
   ],
   support: [
     {
