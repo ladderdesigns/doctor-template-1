@@ -1,5 +1,5 @@
 import { Disclosure } from '@headlessui/react';
-import { ChevronDownIcon, DownloadIcon } from '@heroicons/react/outline';
+import { DownloadIcon } from '@heroicons/react/outline';
 import * as React from 'react';
 
 import Seo from '@/components/Seo';
@@ -9,9 +9,7 @@ import Hero from '../components/Hero';
 
 export default function PatientResources() {
   const items = [{ id: 1 }, { id: 2 }, { id: 3 }];
-  function classNames(...classes: string[]) {
-    return classes.filter(Boolean).join(' ');
-  }
+
   return (
     <>
       {/* <Seo templateTitle='Home' /> */}

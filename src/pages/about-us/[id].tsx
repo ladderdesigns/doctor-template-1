@@ -1,7 +1,6 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import Image from 'next/image';
-import Link from 'next/link';
 import * as React from 'react';
 
 import Background from '../../components/Background';
@@ -22,11 +21,11 @@ interface Props {
 }
 
 type NextGetStaticPropsCtx = {
-  params?: {
+  params: {
     id: string;
   };
   preview?: boolean;
-  previewDate?: any;
+  // previewDate?: any;
 };
 
 export default function AboutUs({ employee }: Props) {
@@ -115,14 +114,12 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params }) {
-  console.log('HEY', params);
+export async function getStaticProps({ params }: NextGetStaticPropsCtx) {
   const slug = params.id;
   const markdownWithMetadata = fs
     .readFileSync(`${process.cwd()}/public/content/employees/${slug}.md`)
     .toString();
   const { data } = matter(markdownWithMetadata);
-  console.log('YO', data);
   return {
     props: {
       employee: data,
