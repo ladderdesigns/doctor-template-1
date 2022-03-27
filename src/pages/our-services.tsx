@@ -19,6 +19,7 @@ interface Props {
         name: string;
         id: number;
         shortdesc: string;
+        link: string;
       };
     },
   ];
@@ -72,6 +73,17 @@ export default function OurServices({ services }: Props) {
                               <p className="text-base text-gray-500">
                                 {service.data.shortdesc}
                               </p>
+                              {/* Only show the video link if a video exists for that service  */}
+                              {service.data.link && (
+                                <div className="aspect-h-9 aspect-w-16 mt-4">
+                                  <iframe
+                                    src={service.data.link}
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                  ></iframe>
+                                </div>
+                              )}
                             </Disclosure.Panel>
                           </>
                         )}

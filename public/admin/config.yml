@@ -27,6 +27,7 @@ collections:
     fields:
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'ID', name: 'id', widget: 'number' }
+      - { label: 'Link', name: 'link', widget: 'string' }
       - { label: 'Short Description', name: 'shortdesc', widget: 'markdown' }
       - {
           label: 'Description',
