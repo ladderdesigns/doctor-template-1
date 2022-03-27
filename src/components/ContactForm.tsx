@@ -1,6 +1,6 @@
-import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
+import { MailIcon, PhoneIcon, PrinterIcon } from '@heroicons/react/outline';
 
-export default function Example() {
+export default function ContactForm() {
   return (
     <div className="bg-white max-w-7xl mx-auto my-10 relative">
       <div className="absolute inset-0">
@@ -27,9 +27,9 @@ export default function Example() {
               <div className="mt-6">
                 <dt className="sr-only">Postal address</dt>
                 <dd>
-                  <p>Sunday - Thursday: 9 AM - 5 PM</p>
+                  <p>Monday - Thursday: 8 AM - 12:30 PM, 1:30 - 5:00 </p>
                   <p>Friday: 9 AM - 12 PM</p>
-                  <p>Saturday: Closed</p>
+                  <p>Saturday - Sunday: Closed</p>
                 </dd>
               </div>
               <div className="mt-6">
@@ -45,6 +45,23 @@ export default function Example() {
                       className="hover:text-gray-900 text-base text-gray-500 underline"
                     >
                       +1 (530) 244-4471
+                    </a>
+                  </span>
+                </dd>
+              </div>
+              <div className="mt-3">
+                <dt className="sr-only">Fax</dt>
+                <dd className="flex">
+                  <PrinterIcon
+                    className="flex-shrink-0 h-6 text-gray-400 w-6"
+                    aria-hidden="true"
+                  />
+                  <span className="ml-3">
+                    <a
+                      href="tel:530-123-4567"
+                      className="hover:text-gray-900 text-base text-gray-500 underline"
+                    >
+                      +1 (530) 244-1407
                     </a>
                   </span>
                 </dd>
@@ -69,8 +86,8 @@ export default function Example() {
             </dl>
             <p className="mt-6 text-base text-gray-500">
               Looking for more information?{' '}
-              <a href="#" className="font-medium text-gray-700 underline">
-                Check out our <a href="#FAQ">FAQ </a>
+              <a href="#faq" className="font-medium text-gray-700 underline">
+                Check out our FAQ
               </a>
               .
             </p>
@@ -88,7 +105,7 @@ export default function Example() {
                   name="full-name"
                   id="full-name"
                   autoComplete="name"
-                  className="block border-gray-300 focus:border-blue-800 focus:ring-indigo-500 placeholder-gray-500 px-4 py-3 rounded-md shadow-sm w-full"
+                  className="block border-gray-300 focus:border-red-800 focus:ring-red-500 placeholder-gray-500 px-4 py-3 rounded-md shadow-sm w-full"
                   placeholder="Full name"
                 />
               </div>
@@ -101,7 +118,7 @@ export default function Example() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="block border-gray-300 focus:border-blue-800 focus:ring-indigo-500 placeholder-gray-500 px-4 py-3 rounded-md shadow-sm w-full"
+                  className="block border-gray-300 focus:border-red-800 focus:ring-red-500 placeholder-gray-500 px-4 py-3 rounded-md shadow-sm w-full"
                   placeholder="Email"
                 />
               </div>
@@ -114,7 +131,7 @@ export default function Example() {
                   name="phone"
                   id="phone"
                   autoComplete="tel"
-                  className="block border-gray-300 focus:border-blue-800 focus:ring-indigo-500 placeholder-gray-500 px-4 py-3 rounded-md shadow-sm w-full"
+                  className="block border-gray-300 focus:border-red-800 focus:ring-red-500 placeholder-gray-500 px-4 py-3 rounded-md shadow-sm w-full"
                   placeholder="Phone"
                 />
               </div>
@@ -126,7 +143,7 @@ export default function Example() {
                   id="message"
                   name="message"
                   rows={4}
-                  className="block border border-gray-300 focus:border-blue-800 focus:ring-indigo-500 placeholder-gray-500 px-4 py-3 rounded-md shadow-sm w-full"
+                  className="block border border-gray-300 focus:border-red-800 focus:ring-red-500 placeholder-gray-500 px-4 py-3 rounded-md shadow-sm w-full"
                   placeholder="Message"
                   defaultValue={''}
                 />
@@ -134,7 +151,7 @@ export default function Example() {
               <div>
                 <button
                   type="submit"
-                  className="bg-blue-800 border border-transparent focus:blue-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 font-medium hover:bg-blue-900 inline-flex justify-center px-6 py-3 rounded-md shadow-sm text-base text-white"
+                  className="bg-red-800 border border-transparent focus:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 font-medium hover:bg-red-900 inline-flex justify-center px-6 py-3 rounded-md shadow-sm text-base text-white"
                 >
                   Submit
                 </button>

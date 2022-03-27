@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { SVGProps } from 'react';
 
 const navigation = {
@@ -106,29 +107,33 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="xl:gap-8 xl:grid xl:grid-cols-3">
           <div className="space-y-8 xl:col-span-1">
-            <Image
-              width={100}
-              height={100}
-              src="/logo.svg"
-              alt="Chandramouli logo"
-            />
+            <Link href="/">
+              <a>
+                <Image
+                  width={150}
+                  height={150}
+                  src="/logo2.svg"
+                  alt="Chandramouli logo"
+                />
+              </a>
+            </Link>
             <p className="text-base text-gray-500">
               A healthy heart is a happy life
             </p>
-            <div className="flex space-x-6">
+            {/* <div className="flex space-x-6">
               {navigation.social.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="hover:text-gray-500 text-gray-400"
+                  className="text-gray-400 hover:text-gray-500"
                 >
                   <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
+                  <item.icon className="w-6 h-6" aria-hidden="true" />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
-          <div className="gap-8 grid grid-cols-2 mt-12 xl:col-span-2 xl:mt-0">
+          <div className="gap-8 grid grid-cols-1 mt-12 md:grid-cols-2 xl:col-span-2 xl:mt-0">
             <div className="md:gap-8 md:grid md:grid-cols-2">
               <div>
                 <h3 className="font-semibold text-gray-400 text-sm tracking-wider uppercase">
@@ -153,6 +158,12 @@ export default function Footer() {
                 </h3>
                 <address className="mb-12 mt-4 text-base text-gray-500">
                   1555 East St STE 100 Redding, California 96001
+                  <br />
+                  <p className="mt-2">
+                    Mon - Th: 8 AM - 12:30 PM, 1:30 PM - 5 PM{' '}
+                  </p>
+                  <p>Fri: 9 AM - 12 PM </p>
+                  <p>Sat - Sun: Closed </p>
                 </address>
                 <a
                   href="mailto:info@drchandramouli.com"
@@ -169,14 +180,18 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div className="space-y-8 xl:col-span-1">
-              <div className="bg-gray-400 h-64 hidden ml-auto my-auto w-64 xl:block"></div>
+            <div className="space-y-8 md:ml-8 xl:col-span-1">
+              <iframe
+                frameBorder="0"
+                className="h-64 overflow-hidden w-64"
+                src="https://www.google.com/maps/embed/v1/place?q=1555+East+St+Redding,+California+96001&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              ></iframe>
             </div>
           </div>
         </div>
         <div className="border-gray-200 border-t mt-12 pt-8">
           <p className="text-base text-gray-400 xl:text-center">
-            &copy; Created by{` `}2021{` `}
+            &copy; Created by{` `}2022{` `}
             <a
               className="font-bold hover:opacity-75 underline"
               href="https://ladderdesigns.co"
