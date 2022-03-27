@@ -9,9 +9,21 @@ import Hero from '../components/Hero';
 
 export default function PatientResources() {
   const items = [
-    { id: 0, name: 'new-patient-packet.pdf' },
-    { id: 1, name: 'catherization-instructions.pdf' },
-    { id: 2, name: 'nuclear-stress-test.pdf' },
+    {
+      id: 0,
+      name: 'new-patient-packet',
+      href: '/patient-resources/new-patient-packet.pdf',
+    },
+    {
+      id: 1,
+      name: 'catherization-instructions',
+      href: '/patient-resources/catherization-instructions.pdf',
+    },
+    {
+      id: 2,
+      name: 'nuclear-stress-test',
+      href: '/patient-resources/nuclear-stress-test.pdf',
+    },
   ];
 
   return (
@@ -43,16 +55,18 @@ export default function PatientResources() {
                                   {file.name}
                                 </span>
                                 <span className="flex h-7 items-center ml-6">
-                                  <button
-                                    type="button"
-                                    className="bg-blue-600 border border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 font-medium hover:bg-blue-700 inline-flex items-center leading-4 px-3 py-2 rounded-md shadow-sm text-sm text-white"
-                                  >
-                                    Download
-                                    <DownloadIcon
-                                      className="-mr-0.5 h-4 ml-2 w-4"
-                                      aria-hidden="true"
-                                    />
-                                  </button>
+                                  <a href={file.href} download>
+                                    <button
+                                      type="button"
+                                      className="bg-blue-600 border border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 font-medium hover:bg-blue-700 inline-flex items-center leading-4 px-3 py-2 rounded-md shadow-sm text-sm text-white"
+                                    >
+                                      Download
+                                      <DownloadIcon
+                                        className="-mr-0.5 h-4 ml-2 w-4"
+                                        aria-hidden="true"
+                                      />
+                                    </button>
+                                  </a>
                                 </span>
                               </Disclosure.Button>
                             </dt>
