@@ -19,7 +19,7 @@ const faqs = [
 export default function FAQ() {
   return (
     <div
-      className="bg-white max-w-7xl mb-10 mx-auto rounded-xl shadow-xl"
+      className="bg-white max-w-7xl mb-10 mx-auto rounded-xl shadow-sm"
       id="faq"
     >
       <div className="divide-gray-200 divide-y-2 max-w-7xl mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:px-8">

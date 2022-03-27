@@ -160,9 +160,9 @@ export default function Footer() {
                   1555 East St STE 100 Redding, California 96001
                   <br />
                   <p className="mt-2">
-                    Mon - Th: 8 AM - 12:30 PM, 1:30 PM - 5 PM{' '}
+                    Mon - Th: 8 AM - 12:30 PM, 1:30 PM - 4:30 PM{' '}
                   </p>
-                  <p>Fri: 9 AM - 12 PM </p>
+                  <p>Fri: 8 AM - 12 PM </p>
                   <p>Sat - Sun: Closed </p>
                 </address>
                 <a
