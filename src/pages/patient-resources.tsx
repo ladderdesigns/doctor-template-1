@@ -11,8 +11,8 @@ export default function PatientResources() {
   const items = [
     {
       id: 0,
-      name: 'new-patient-packet',
-      href: '/patient-resources/new-patient-packet.pdf',
+      name: 'new-patient-forms',
+      href: '/patient-resources/new-patient-forms.pdf',
     },
     {
       id: 1,
@@ -49,7 +49,7 @@ export default function PatientResources() {
                       <Disclosure as="div" key={file.id} className="pt-6">
                         {({ open }) => (
                           <>
-                            <dt className="text-lg">
+                            <dt className="text-lg" id={file.name}>
                               <Disclosure.Button className="flex items-start justify-between text-gray-400 text-left w-full">
                                 <span className="font-medium text-gray-900">
                                   {file.name}
