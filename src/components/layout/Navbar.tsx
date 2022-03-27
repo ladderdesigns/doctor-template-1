@@ -83,6 +83,11 @@ export default function Navbar() {
                       Contact
                     </a>
                   </Link>
+                  <Link href="/faq">
+                    <a className="border-transparent focus:font-bold focus:underline hover:border-gray-300 hover:text-gray-300 inline-flex items-center pt-1 px-1 text-md text-white">
+                      FAQ
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -118,6 +123,13 @@ export default function Navbar() {
                 className="block border-l-4 border-transparent font-medium hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 pl-3 pr-4 py-2 text-base text-white"
               >
                 Contact
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="/faq"
+                className="block border-l-4 border-transparent font-medium hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 pl-3 pr-4 py-2 text-base text-white"
+              >
+                FAQ
               </Disclosure.Button>
             </div>
           </Disclosure.Panel>

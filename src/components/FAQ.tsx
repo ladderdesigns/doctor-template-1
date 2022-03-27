@@ -2,15 +2,49 @@
 const faqs = [
   {
     id: 1,
-    question: 'What sorts of patients are accepted?',
+    question: 'Where is the office located?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'We are located in East Street Physician Center in Suite 100. We share a parking lot with Shasta Regional Medical Center.',
   },
   {
     id: 2,
-    question: 'What insurances are accepted?',
+    question: 'How long is an office visit?',
+    answer: 'Please allow for an hour and a half for any office visits.',
+  },
+  {
+    id: 3,
+    question: 'What should I wear before a nuclear stress test?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Please wear comfortable clothes and comfortable shoes for walking the treadmill.',
+  },
+  {
+    id: 4,
+    question: 'Do I need to fast before a nuclear stress test?',
+    answer:
+      'Yes, please fast for four hours before your appointment. This includes no caffeine and no chocolate for 24 hours. Additionally, please do not take any beta blockers. ',
+  },
+  {
+    id: 5,
+    question: 'Do I need to fast before a cholestral screening?',
+    answer: 'Yes, please avoid food or caffeine for 12 hours beforehand.',
+  },
+  {
+    id: 6,
+    question: 'Does your office take my insurance?',
+    answer:
+      "We are not currently taking any new parternships, HMO's, or medicare advantage plans.",
+  },
+  {
+    id: 7,
+    question: 'What should be my diet when I am on Coumadin',
+    answer:
+      "Coumadin is a blood-thinning medication that helps treat and prevent blood clots from occuring. There are specific foods and beverages that can weaken Coumadin's ability to prevent blood clots. When taking Coumadin avoid or consume small amounts of alcohol and cranberry juice. Additionally, avoid consuming foods that contain large amounts of Vitamin K such as kale, spinach, and broccoli.",
+  },
+  {
+    id: 8,
+    question: 'Can I make an appointment on this website?',
+    answer:
+      'At this time, booking appointment on the web is not possible. Please call our office to book your next appointment. ',
   },
 
   // More questions...
@@ -19,7 +53,7 @@ const faqs = [
 export default function FAQ() {
   return (
     <div
-      className="bg-white max-w-7xl mb-10 mx-auto rounded-xl shadow-xl"
+      className="bg-white max-w-7xl mb-10 mx-auto rounded-xl shadow-sm"
       id="faq"
     >
       <div className="divide-gray-200 divide-y-2 max-w-7xl mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:px-8">

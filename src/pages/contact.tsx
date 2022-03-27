@@ -19,7 +19,7 @@ export default function Contact() {
             title="Contact"
             description="Redding’s premier cardiology services"
           />
-          <Background image="pattern.png" width={300} height={400}>
+          <Background image="pattern2.png" width={300} height={300}>
             <ContactFrom />
             <FAQ />
           </Background>

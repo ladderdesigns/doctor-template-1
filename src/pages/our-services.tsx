@@ -40,7 +40,7 @@ export default function OurServices({ services }: Props) {
           <Background image="pattern2.png" width={300} height={300}>
             <div className="py-16 w-full">
               <div className="max-w-md mx-auto px-4 py-8 relative sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-                <div className="bg-white divide-gray-200 divide-y-2 max-w-3xl mx-auto p-6 relative rounded-xl">
+                <div className="bg-white divide-gray-200 divide-y-2 max-w-3xl mx-auto p-6 relative rounded-xl shadow-sm">
                   <h2 className="font-semibold text-2xl text-center tracking-tight sm:text-3xl">
                     What we provide
                   </h2>
@@ -73,7 +73,7 @@ export default function OurServices({ services }: Props) {
                               <p className="text-base text-gray-500">
                                 {service.data.shortdesc}
                               </p>
-                              {/* Only show the video link if a video exists for that service  */}
+                              {/* Only show the video link if a video exists for that service */}
                               {service.data.link && (
                                 <div className="aspect-h-9 aspect-w-16 mt-4">
                                   <iframe
