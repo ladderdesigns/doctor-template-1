@@ -34,12 +34,12 @@ export default function PatientResources() {
   const items2 = [
     {
       id: 0,
-      name: 'Medtronic - The Carelink Network portal ',
+      name: 'Medtronic - The Carelink Network (patient portal) ',
       href: 'https://www.medtronic.com/us-en/healthcare-professionals/products/cardiac-rhythm/managing-patients/information-systems/carelink-network.html',
     },
     {
       id: 1,
-      name: 'Abbot patient portal',
+      name: 'Abbot (patient portal)',
       href: 'https://www.abbott.com/',
     },
   ];

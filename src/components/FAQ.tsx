@@ -26,7 +26,7 @@ const faqs = [
   {
     id: 5,
     question: 'Do I need to fast before a cholestral screening?',
-    answer: 'Yes, please avoid food or caffeine for 12 hours beforehand.',
+    answer: 'Yes, please avoid food and caffeine for 12 hours beforehand.',
   },
   {
     id: 6,
@@ -44,7 +44,7 @@ const faqs = [
     id: 8,
     question: 'Can I make an appointment on this website?',
     answer:
-      'At this time, booking appointment on the web is not possible. Please call our office to book your next appointment. ',
+      'At this time, booking appointments on the web is not possible. Please call our office to book your next appointment. ',
   },
 
   // More questions...
@@ -53,10 +53,10 @@ const faqs = [
 export default function FAQ() {
   return (
     <div
-      className="bg-white max-w-7xl mb-10 mx-auto rounded-xl shadow-sm"
+      className="max-w-md mx-auto px-4 py-8 relative rounded-xl sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
       id="faq"
     >
-      <div className="divide-gray-200 divide-y-2 max-w-7xl mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+      <div className="bg-white divide-gray-200 divide-y-2 max-w-7xl mx-auto px-4 py-16 rounded-xl shadow-sm sm:px-6 sm:py-24 lg:px-8">
         <h2 className="font-semibold text--gray-900 text-3xl tracking-tight sm:text-4xl">
           Frequently asked questions
         </h2>
