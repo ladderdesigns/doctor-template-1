@@ -77,11 +77,12 @@ export default function ContactForm() {
                   />
                   <span className="ml-3">
                     <a
-                      href="tel:530-123-4567"
+                      href="tel:530-244-1407"
                       className="hover:text-gray-900 text-base text-gray-500 underline"
                     >
                       +1 (530) 244-1407
                     </a>
+                    <span className="ml-2">(fax)</span>
                   </span>
                 </dd>
               </div>
@@ -114,7 +115,20 @@ export default function ContactForm() {
         </div>
         <div className="bg-white px-4 py-16 rounded-xl sm:px-6 lg:col-span-3 lg:px-8 lg:py-24 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
-            <form action="#" method="POST" className="gap-y-6 grid grid-cols-1">
+            <form
+              action="#"
+              method="POST"
+              netlify-honeypot="bot-field"
+              className="gap-y-6 grid grid-cols-1"
+              data-netlify="true"
+              name="contact"
+            >
+              <p className="hidden">
+                <label>
+                  Don’t fill this out if you’re human:{' '}
+                  <input name="bot-field" />
+                </label>
+              </p>
               <div>
                 <label htmlFor="full-name" className="sr-only">
                   Full name
