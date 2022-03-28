@@ -111,35 +111,35 @@ export default function Example() {
               <Disclosure.Button
                 as="a"
                 href="patient-resources"
-                className="block border-l-4 border-transparent font-medium hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 pl-3 pr-4 py-2 text-base text-gray-500"
+                className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
               >
                 Patient Resources
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="about-us"
-                className="block border-l-4 border-transparent font-medium hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 pl-3 pr-4 py-2 text-base text-gray-500"
+                className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
               >
                 About Us
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="contact"
-                className="block border-l-4 border-transparent font-medium hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 pl-3 pr-4 py-2 text-base text-gray-500"
+                className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
               >
                 Contact
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="contact/#faq"
-                className="block border-l-4 border-transparent font-medium hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 pl-3 pr-4 py-2 text-base text-gray-500"
+                className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
               >
                 FAQ
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="patient-resources/#new-patient-forms"
-                className="block border border-l-4 border-transparent font-medium hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 pl-3 pr-4 py-2 text-base text-gray-500"
+                className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
               >
                 New Patient Forms
               </Disclosure.Button>
