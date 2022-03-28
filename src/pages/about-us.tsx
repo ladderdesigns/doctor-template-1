@@ -47,10 +47,9 @@ export default function AboutUs({ employees }: Props) {
                       Our team
                     </h2>
                     <p className="text-gray-500 text-xl">
-                      We have served the Redding and Northern California
-                      community since 1999. Our mission is to improve cardiac
-                      health and wellbeing through integrated and compassionate
-                      patient care. Come let our family take care of yours.
+                      Our mission is to improve cardiac health and wellbeing
+                      through integrated and compassionate patient care. Come
+                      let our family take care of yours.
                     </p>
                   </div>
                   <div className="lg:col-span-2">

@@ -9,7 +9,7 @@ const faqs = [
   {
     id: 2,
     question: 'How long is an office visit?',
-    answer: 'Please allow for an hour and a half for any office visits.',
+    answer: 'Please allow for up to an hour and a half for any office visits.',
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     id: 7,
-    question: 'What should be my diet when I am on Coumadin',
+    question: 'What should be my diet when I am on Coumadin?',
     answer:
       "Coumadin is a blood-thinning medication that helps treat and prevent blood clots from occuring. There are specific foods and beverages that can weaken Coumadin's ability to prevent blood clots. When taking Coumadin avoid or consume small amounts of alcohol and cranberry juice. Additionally, avoid consuming foods that contain large amounts of Vitamin K such as kale, spinach, and broccoli.",
   },
@@ -57,7 +57,7 @@ export default function FAQ() {
       id="faq"
     >
       <div className="divide-gray-200 divide-y-2 max-w-7xl mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-        <h2 className="font-semibold text-3xl text-gray-900 tracking-tight sm:text-4xl">
+        <h2 className="font-semibold text--gray-900 text-3xl tracking-tight sm:text-4xl">
           Frequently asked questions
         </h2>
         <div className="mt-6 pt-10">
