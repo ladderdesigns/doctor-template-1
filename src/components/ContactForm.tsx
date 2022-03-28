@@ -123,12 +123,15 @@ export default function ContactForm() {
               data-netlify="true"
               name="contact"
             >
-              <p className="hidden">
+              <div>
+                <input type="hidden" name="form-name" value="contact" />
+              </div>
+              <div className="hidden">
                 <label>
                   Don’t fill this out if you’re human:{' '}
                   <input name="bot-field" />
                 </label>
-              </p>
+              </div>
               <div>
                 <label htmlFor="full-name" className="sr-only">
                   Full name
