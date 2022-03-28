@@ -39,7 +39,7 @@ export default function Example() {
                     </Link>
                   </div>
                 </div>
-                <div className="hidden sm:flex sm:ml-6 sm:space-x-8">
+                <div className="hidden sm:ml-6 sm:space-x-8 lg:flex">
                   {/* Current: "border-red-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <Link href="/our-services">
                     <a
@@ -84,7 +84,7 @@ export default function Example() {
                   </a>
                 </div>
               </div>
-              <div className="-mr-2 flex items-center sm:hidden">
+              <div className="-mr-2 flex items-center lg:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500 hover:bg-gray-100 hover:text-gray-500 inline-flex items-center justify-center p-2 rounded-md text-gray-400">
                   <span className="sr-only">Open main menu</span>
@@ -98,7 +98,7 @@ export default function Example() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="lg:hidden">
             <div className="pb-3 pt-2 space-y-1">
               {/* Current: "bg-red-50 border-red-500 text-red-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
               <Disclosure.Button
