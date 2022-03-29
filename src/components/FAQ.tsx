@@ -13,38 +13,43 @@ const faqs = [
   },
   {
     id: 3,
-    question: 'What should I wear before a nuclear stress test?',
+    question: 'Can I make an appointment on this website?',
     answer:
-      'Please wear comfortable clothes and comfortable shoes for walking the treadmill.',
+      'At this time, booking appointments on the web is not possible. Please call our office to book your next appointment. ',
   },
   {
     id: 4,
-    question: 'Do I need to fast before a nuclear stress test?',
-    answer:
-      'Yes, please fast for four hours before your appointment. This includes no caffeine and no chocolate for 24 hours. Additionally, please do not take any beta blockers. ',
-  },
-  {
-    id: 5,
-    question: 'Do I need to fast before a cholestral screening?',
-    answer: 'Yes, please avoid food and caffeine for 12 hours beforehand.',
-  },
-  {
-    id: 6,
     question: 'Does your office take my insurance?',
     answer:
       "We are not currently taking any new parternships, HMO's, or medicare advantage plans.",
   },
   {
-    id: 7,
-    question: 'What should be my diet when I am on Coumadin?',
+    id: 5,
+    question: 'What should I wear before a nuclear stress test?',
     answer:
-      "Coumadin is a blood-thinning medication that helps treat and prevent blood clots from occuring. There are specific foods and beverages that can weaken Coumadin's ability to prevent blood clots. When taking Coumadin avoid or consume small amounts of alcohol and cranberry juice. Additionally, avoid consuming foods that contain large amounts of Vitamin K such as kale, spinach, and broccoli.",
+      'Please wear comfortable clothes and comfortable shoes for walking the treadmill.',
+  },
+  {
+    id: 6,
+    question: 'Do I need to fast before a nuclear stress test?',
+    answer:
+      'Yes, please fast for four hours before your appointment. This includes no caffeine and no chocolate for 24 hours. Additionally, please do not take any beta blockers. ',
+  },
+  {
+    id: 7,
+    question: 'Do I need to fast before a cholestral screening?',
+    answer: 'Yes, please avoid food and caffeine for 12 hours beforehand.',
   },
   {
     id: 8,
-    question: 'Can I make an appointment on this website?',
+    question: 'How should I prepare for an echocardiogram?',
+    answer: 'No pereparation is required for an echocardiogram.',
+  },
+  {
+    id: 9,
+    question: 'What should be my diet when I am on Coumadin?',
     answer:
-      'At this time, booking appointments on the web is not possible. Please call our office to book your next appointment. ',
+      "Coumadin is a blood-thinning medication that helps treat and prevent blood clots from occuring. There are specific foods and beverages that can weaken Coumadin's ability to prevent blood clots. When taking Coumadin avoid or consume small amounts of alcohol and cranberry juice. Additionally, avoid consuming foods that contain large amounts of Vitamin K such as kale, spinach, and broccoli.",
   },
 
   // More questions...
