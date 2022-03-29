@@ -19,6 +19,7 @@ collections:
       - { label: 'Short Biography', name: 'shortbio', widget: 'string' }
       - { label: 'Image', name: 'img', widget: 'image' }
       - { label: 'Active', name: 'active', widget: 'boolean' }
+
   - label: 'Our Services'
     name: 'our-services'
     folder: 'content/our-services'
@@ -29,7 +30,6 @@ collections:
       - { label: 'ID', name: 'id', widget: 'number' }
       - { label: 'Link', name: 'link', widget: 'string' }
       - { label: 'Short Description', name: 'shortdesc', widget: 'markdown' }
-      - { label: 'Biography', name: 'biography', widget: 'list' }
       - {
           label: 'Description',
           name: 'desc',
