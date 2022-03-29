@@ -49,10 +49,9 @@ export default function AboutUs({ employee }: Props) {
                       Our team
                     </h2>
                     <p className="text-gray-500 text-xl">
-                      Nulla quam felis, enim faucibus proin velit, ornare id
-                      pretium. Augue ultrices sed arcu condimentum vestibulum
-                      suspendisse. Volutpat eu faucibus vivamus eget bibendum
-                      cras.
+                      Our mission is to improve cardiac health through
+                      integrated and compassionate patient care. Come let our
+                      family take care of yours.
                     </p>
                   </div>
                   <div className="lg:col-span-2">
@@ -71,7 +70,10 @@ export default function AboutUs({ employee }: Props) {
                             />
                           </div>
                           <div className="font-medium leading-6 space-y-1 text-lg">
-                            <h3 className="text-2xl">{employee.name}</h3>
+                            <h3 className="text-2xl">{employee.name}</h3>{' '}
+                            <span className="text-gray-600">
+                              {employee.creds}
+                            </span>
                             <p className="text-gray-600">{employee.role}</p>
                           </div>
                           <div className="text-lg">

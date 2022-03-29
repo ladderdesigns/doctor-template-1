@@ -116,7 +116,13 @@ export default function PatientResources() {
                                       type="button"
                                       className="bg-blue-600 border border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 font-medium hover:bg-blue-700 inline-flex items-center leading-4 px-3 py-2 rounded-md shadow-sm text-sm text-white"
                                     >
-                                      Visit Website
+                                      <span className="hidden md:block">
+                                        {' '}
+                                        Visit Website{' '}
+                                      </span>
+                                      <span className="block md:hidden">
+                                        Website
+                                      </span>
                                       <SearchIcon
                                         className="-mr-0.5 h-4 ml-2 w-4"
                                         aria-hidden="true"
