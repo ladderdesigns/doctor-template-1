@@ -19,7 +19,6 @@ collections:
       - { label: 'Short Biography', name: 'shortbio', widget: 'string' }
       - { label: 'Image', name: 'img', widget: 'image' }
       - { label: 'Active', name: 'active', widget: 'boolean' }
-
   - label: 'Our Services'
     name: 'our-services'
     folder: 'content/our-services'
