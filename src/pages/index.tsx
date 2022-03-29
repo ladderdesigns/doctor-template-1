@@ -33,25 +33,6 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="bg-transparent w-full">
-              <div className="max-w-md mx-auto px-4 py-8 relative sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-                <div className="bg-white grid grid-cols-1 h-24 p-4 relative rounded-xl sm:grid-cols-2">
-                  <div className=""> Lucas </div>
-                  <div className=""> Jacob </div>
-                </div>
-              </div>
-              <div className="max-w-md mx-auto px-4 py-8 relative sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-                <div className="bg-white h-24 p-4 relative rounded-xl">
-                  Lucas
-                </div>
-              </div>
-              <div className="max-w-md mx-auto px-4 py-8 relative sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-                <div className="bg-white h-24 p-4 relative rounded-xl">
-                  Lucas
-                </div>
-              </div>
-            </div>
-
             <div className="bg-white pt-16 lg:py-24">
               <div className="bg-red-800 pb-16 lg:pb-0 lg:relative lg:z-10">
                 <div className="lg:gap-8 lg:grid lg:grid-cols-3 lg:max-w-7xl lg:mx-auto lg:px-8">
@@ -64,7 +45,7 @@ export default function Index() {
                       <div className="aspect-h-6 aspect-w-10 overflow-hidden rounded-xl shadow-xl sm:aspect-h-7 sm:aspect-w-16 lg:aspect-none lg:h-full">
                         <img
                           className="object-cover lg:h-full lg:w-full"
-                          src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+                          src="https://images.unsplash.com/photo-1631815587646-b85a1bb027e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGF0aWVudHxlbnwwfDF8MHx8&auto=format&fit=crop&w=800&q=60"
                           alt=""
                         />
                       </div>
