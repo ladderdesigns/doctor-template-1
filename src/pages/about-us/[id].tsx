@@ -122,6 +122,9 @@ export async function getStaticProps({ params }: NextGetStaticPropsCtx) {
     .readFileSync(`${process.cwd()}/public/content/employees/${slug}.md`)
     .toString();
   const { data } = matter(markdownWithMetadata);
+  const updatedData = data.bio.replace(/NEWLINE/g, '\n');
+  data.bio = updatedData;
+
   return {
     props: {
       employee: data,
