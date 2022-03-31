@@ -49,7 +49,7 @@ const faqs = [
     id: 9,
     question: 'What should be my diet when I am on Coumadin?',
     answer:
-      "Coumadin is a blood-thinning medication that helps treat and prevent blood clots from occuring. There are specific foods and beverages that can weaken Coumadin's ability to prevent blood clots. When taking Coumadin avoid or consume small amounts of alcohol and cranberry juice. Additionally, avoid consuming foods that contain large amounts of Vitamin K such as kale, spinach, and broccoli.",
+      "Coumadin is a blood-thinning medication that helps treat and prevent blood clots from occurring. There are specific foods and beverages that can weaken Coumadin's ability to prevent blood clots. When taking Coumadin avoid or consume small amounts of alcohol and cranberry juice. Additionally, avoid consuming foods that contain large amounts of Vitamin K such as kale, spinach, and broccoli.",
   },
 
   // More questions...
