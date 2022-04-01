@@ -1,7 +1,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import Image from 'next/image';
-import * as React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Background from '../../components/Background';
 import Hero from '../../components/Hero';
@@ -29,6 +29,16 @@ type NextGetStaticPropsCtx = {
 };
 
 export default function AboutUs({ employee }: Props) {
+  const [employeeBioBlurbs, setEmployeeBioBlurbs] = useState<string[]>([]);
+
+  useEffect(() => {
+    // useState was chosen here because there is an issue about splitting the employee.bio based one whether it is passed in as a string or array
+    // I tried both ways and splitting both before and after getStaticProps completes
+    // this is a hacky solution, but it works for now, we can always come back later
+    const result = employee.bio.split('\n');
+    setEmployeeBioBlurbs(result);
+  }, [employee.bio]);
+
   return (
     <>
       {/* <Seo templateTitle='Home' /> */}
@@ -77,7 +87,13 @@ export default function AboutUs({ employee }: Props) {
                             <p className="text-gray-600">{employee.role}</p>
                           </div>
                           <div className="text-lg">
-                            <p className="text-gray-500">{employee.bio}</p>
+                            {employeeBioBlurbs.map((blurb, index) => (
+                              <>
+                                <p className="mb-3 text-gray-500" key={index}>
+                                  {blurb}
+                                </p>
+                              </>
+                            ))}
                           </div>
                         </div>
                       </li>
@@ -122,8 +138,6 @@ export async function getStaticProps({ params }: NextGetStaticPropsCtx) {
     .readFileSync(`${process.cwd()}/public/content/employees/${slug}.md`)
     .toString();
   const { data } = matter(markdownWithMetadata);
-  const updatedData = data.bio.replace(/NEWLINE/g, '\n');
-  data.bio = updatedData;
 
   return {
     props: {

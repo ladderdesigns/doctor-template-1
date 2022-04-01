@@ -117,7 +117,6 @@ export async function getStaticProps() {
       .toString();
 
     const { data } = matter(markdownWithMetadata);
-
     return {
       slug: filename.replace('.md', ''),
       data,
