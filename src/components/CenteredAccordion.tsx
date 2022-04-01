@@ -19,7 +19,7 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function Example() {
+export default function CenteredAccordion() {
   return (
     <div className="bg-white max-w-7xl mx-auto my-10 rounded-xl">
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 sm:py-16 lg:px-8">

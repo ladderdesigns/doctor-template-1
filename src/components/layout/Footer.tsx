@@ -6,9 +6,15 @@ const navigation = {
   links: [
     { name: `Home`, href: `#` },
     { name: `Our Services`, href: `/our-services` },
-    { name: `Patient Resources`, href: `/patient-resources` },
+    { name: `Patient Forms`, href: `/patient-forms` },
     { name: `About Us`, href: `/about-us` },
     { name: `Contact`, href: `/contact` },
+    { name: `FAQ`, href: `/contact/faq` },
+    {
+      name: `Medtronic Portal`,
+      href: `https://www.medtronic.com/us-en/healthcare-professionals/products/cardiac-rhythm/managing-patients/information-systems/carelink-network.html`,
+    },
+    { name: `Abbot Portal`, href: `https://www.abbott.com/` },
   ],
   support: [
     {
@@ -118,7 +124,7 @@ export default function Footer() {
               </a>
             </Link>
             <p className="text-base text-gray-500">
-              A healthy heart is a happy life
+              Let our family take care of yours.
             </p>
             {/* <div className="flex space-x-6">
               {navigation.social.map((item) => (
@@ -156,10 +162,10 @@ export default function Footer() {
                 <h3 className="font-semibold text-gray-400 text-sm tracking-wider uppercase">
                   Find us
                 </h3>
-                <address className="mb-12 mt-4 text-base text-gray-500">
+                <address className="mb-8 mt-4 text-base text-gray-500">
                   1555 East St STE 100 Redding, California 96001
                   <br />
-                  <p className="mt-2">
+                  <p className="mt-4">
                     Mon - Th: 8 AM - 12:30 PM, 1:30 PM - 4:30 PM{' '}
                   </p>
                   <p>Fri: 8 AM - 12 PM </p>

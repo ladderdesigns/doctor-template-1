@@ -47,10 +47,9 @@ export default function AboutUs({ employees }: Props) {
                       Our team
                     </h2>
                     <p className="text-gray-500 text-xl">
-                      Nulla quam felis, enim faucibus proin velit, ornare id
-                      pretium. Augue ultrices sed arcu condimentum vestibulum
-                      suspendisse. Volutpat eu faucibus vivamus eget bibendum
-                      cras.
+                      Our mission is to improve cardiac health through
+                      integrated and compassionate patient care. Come let our
+                      family take care of yours.
                     </p>
                   </div>
                   <div className="lg:col-span-2">
@@ -73,6 +72,7 @@ export default function AboutUs({ employees }: Props) {
                                 objectFit="cover"
                               />
                             </div>
+
                             <div className="font-medium leading-6 space-y-1 text-lg">
                               <h3 className="text-2xl">{employee.data.name}</h3>
                               <p className="text-gray-600">
@@ -80,10 +80,12 @@ export default function AboutUs({ employees }: Props) {
                               </p>
                             </div>
                             <div className="text-lg">
-                              <p className="text-gray-500">
-                                {employee.data.shortbio}
-                              </p>
-                              {employee.data.bio && (
+                              {employee.data.id === 0 && (
+                                <p className="text-gray-500">
+                                  {employee.data.shortbio}
+                                </p>
+                              )}
+                              {employee.data.id === 0 && (
                                 <Link href={'/about-us/' + employee.data.slug}>
                                   <a className="text-blue-500 underline">
                                     Read more
@@ -115,7 +117,6 @@ export async function getStaticProps() {
       .toString();
 
     const { data } = matter(markdownWithMetadata);
-
     return {
       slug: filename.replace('.md', ''),
       data,

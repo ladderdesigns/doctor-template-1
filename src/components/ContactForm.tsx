@@ -2,12 +2,9 @@ import { MailIcon, PhoneIcon, PrinterIcon } from '@heroicons/react/outline';
 
 export default function ContactForm() {
   return (
-    <div className="bg-white max-w-7xl mx-auto my-10 relative rounded-xl shadow-sm">
-      <div className="absolute inset-0">
-        <div className="absolute bg-gray-50 inset-y-0 left-0 w-1/2" />
-      </div>
-      <div className="mx-auto relative lg:grid lg:grid-cols-5">
-        <div className="bg-white px-4 py-16 rounded-xl sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+    <div className="max-w-md mx-auto my-10 px-4 py-8 relative rounded-xl sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="bg-transparent mx-auto relative shadow-sm lg:grid lg:grid-cols-5">
+        <div className="bg-white px-4 py-16 rounded-l-xl rounded-r-xl sm:px-6 lg:border-gray-200 lg:border-r-2 lg:col-span-2 lg:px-8 lg:py-24 lg:rounded-r-none xl:pr-12">
           <div className="max-w-lg mx-auto">
             <h2 className="font-semibold text-3xl text-gray-900 tracking-tight sm:text-4xl">
               Get in touch
@@ -77,11 +74,12 @@ export default function ContactForm() {
                   />
                   <span className="ml-3">
                     <a
-                      href="tel:530-123-4567"
+                      href="tel:530-244-1407"
                       className="hover:text-gray-900 text-base text-gray-500 underline"
                     >
                       +1 (530) 244-1407
                     </a>
+                    <span className="ml-2">(fax)</span>
                   </span>
                 </dd>
               </div>
@@ -112,9 +110,25 @@ export default function ContactForm() {
             </p>
           </div>
         </div>
-        <div className="bg-white px-4 py-16 rounded-xl sm:px-6 lg:col-span-3 lg:px-8 lg:py-24 xl:pl-12">
+        <div className="bg-white pb-16 px-4 rounded-xl sm:px-6 lg:col-span-3 lg:px-8 lg:py-24 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
-            <form action="#" method="POST" className="gap-y-6 grid grid-cols-1">
+            <form
+              action="#"
+              method="POST"
+              netlify-honeypot="bot-field"
+              className="gap-y-6 grid grid-cols-1"
+              data-netlify="true"
+              name="contact"
+            >
+              <div>
+                <input type="hidden" name="form-name" value="contact" />
+              </div>
+              <div className="hidden">
+                <label>
+                  Don’t fill this out if you’re human:{' '}
+                  <input name="bot-field" />
+                </label>
+              </div>
               <div>
                 <label htmlFor="full-name" className="sr-only">
                   Full name

@@ -1,7 +1,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import Image from 'next/image';
-import * as React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Background from '../../components/Background';
 import Hero from '../../components/Hero';
@@ -29,6 +29,16 @@ type NextGetStaticPropsCtx = {
 };
 
 export default function AboutUs({ employee }: Props) {
+  const [employeeBioBlurbs, setEmployeeBioBlurbs] = useState<string[]>([]);
+
+  useEffect(() => {
+    // useState was chosen here because there is an issue about splitting the employee.bio based one whether it is passed in as a string or array
+    // I tried both ways and splitting both before and after getStaticProps completes
+    // this is a hacky solution, but it works for now, we can always come back later
+    const result = employee.bio.split('\n');
+    setEmployeeBioBlurbs(result);
+  }, [employee.bio]);
+
   return (
     <>
       {/* <Seo templateTitle='Home' /> */}
@@ -41,18 +51,17 @@ export default function AboutUs({ employee }: Props) {
             description="Redding’s premier cardiology services"
           />
           <Background image="pattern2.png" width={300} height={300}>
-            <div className="my-auto py-16 rounded-xl shadow-xl w-full">
-              <div className="bg-white mx-12 px-4 py-8 relative sm:max-w-3xl sm:px-6 md:mx-auto lg:max-w-5xl lg:px-8">
+            <div className="my-auto py-16 shadow-xl w-full">
+              <div className="bg-white mx-12 px-4 py-8 relative rounded-xl sm:max-w-3xl sm:px-6 md:mx-auto lg:max-w-5xl lg:px-8">
                 <div className="space-y-12 lg:gap-8 lg:grid lg:grid-cols-3 lg:space-y-0">
                   <div className="space-y-5 sm:space-y-4">
                     <h2 className="font-semibold text-3xl tracking-tight sm:text-4xl">
                       Our team
                     </h2>
                     <p className="text-gray-500 text-xl">
-                      Nulla quam felis, enim faucibus proin velit, ornare id
-                      pretium. Augue ultrices sed arcu condimentum vestibulum
-                      suspendisse. Volutpat eu faucibus vivamus eget bibendum
-                      cras.
+                      Our mission is to improve cardiac health through
+                      integrated and compassionate patient care. Come let our
+                      family take care of yours.
                     </p>
                   </div>
                   <div className="lg:col-span-2">
@@ -71,11 +80,20 @@ export default function AboutUs({ employee }: Props) {
                             />
                           </div>
                           <div className="font-medium leading-6 space-y-1 text-lg">
-                            <h3 className="text-2xl">{employee.name}</h3>
+                            <h3 className="text-2xl">{employee.name}</h3>{' '}
+                            <span className="text-gray-600">
+                              {employee.creds}
+                            </span>
                             <p className="text-gray-600">{employee.role}</p>
                           </div>
                           <div className="text-lg">
-                            <p className="text-gray-500">{employee.bio}</p>
+                            {employeeBioBlurbs.map((blurb, index) => (
+                              <>
+                                <p className="mb-3 text-gray-500" key={index}>
+                                  {blurb}
+                                </p>
+                              </>
+                            ))}
                           </div>
                         </div>
                       </li>
@@ -120,6 +138,7 @@ export async function getStaticProps({ params }: NextGetStaticPropsCtx) {
     .readFileSync(`${process.cwd()}/public/content/employees/${slug}.md`)
     .toString();
   const { data } = matter(markdownWithMetadata);
+
   return {
     props: {
       employee: data,

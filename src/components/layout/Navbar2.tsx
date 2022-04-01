@@ -39,7 +39,7 @@ export default function Example() {
                     </Link>
                   </div>
                 </div>
-                <div className="hidden sm:flex sm:ml-6 sm:space-x-8">
+                <div className="hidden sm:ml-6 sm:space-x-8 lg:flex">
                   {/* Current: "border-red-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <Link href="/our-services">
                     <a
@@ -49,15 +49,15 @@ export default function Example() {
                       Our Services
                     </a>
                   </Link>
-                  <Link href="/patient-resources">
+                  <Link href="/patient-forms">
                     <a
-                      href="patient-resources"
+                      href="patient-forms"
                       className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
                     >
-                      Patient Resources
+                      Patient Forms
                     </a>
                   </Link>
-
+                  {/* TODO: update these Jacob */}
                   <a
                     href="about-us"
                     className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
@@ -76,15 +76,22 @@ export default function Example() {
                   >
                     FAQ
                   </a>
+
                   <a
-                    href="patient-resources/#new-patient-forms"
+                    href="https://www.medtronic.com/us-en/healthcare-professionals/products/cardiac-rhythm/managing-patients/information-systems/carelink-network.html"
                     className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
                   >
-                    New Patient Forms
+                    Medtronic Portal
+                  </a>
+                  <a
+                    href="https://www.abbott.com/"
+                    className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
+                  >
+                    Abbot Portal
                   </a>
                 </div>
               </div>
-              <div className="-mr-2 flex items-center sm:hidden">
+              <div className="-mr-2 flex items-center lg:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500 hover:bg-gray-100 hover:text-gray-500 inline-flex items-center justify-center p-2 rounded-md text-gray-400">
                   <span className="sr-only">Open main menu</span>
@@ -98,50 +105,57 @@ export default function Example() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="lg:hidden">
             <div className="pb-3 pt-2 space-y-1">
               {/* Current: "bg-red-50 border-red-500 text-red-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
               <Disclosure.Button
                 as="a"
                 href="our-services"
-                className="bg-red-50 block border-l-4 border-red-500 font-medium pl-3 pr-4 py-2 text-base text-red-700"
+                className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
               >
                 Our Services
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="patient-resources"
-                className="block border-l-4 border-transparent font-medium hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 pl-3 pr-4 py-2 text-base text-gray-500"
+                href="patient-forms"
+                className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
               >
-                Patient Resources
+                Patient Forms
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="about-us"
-                className="block border-l-4 border-transparent font-medium hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 pl-3 pr-4 py-2 text-base text-gray-500"
+                className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
               >
                 About Us
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="contact"
-                className="block border-l-4 border-transparent font-medium hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 pl-3 pr-4 py-2 text-base text-gray-500"
+                className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
               >
                 Contact
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="contact/#faq"
-                className="block border-l-4 border-transparent font-medium hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 pl-3 pr-4 py-2 text-base text-gray-500"
+                className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
               >
                 FAQ
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="patient-resources/#new-patient-forms"
-                className="block border-l-4 border-transparent font-medium hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 pl-3 pr-4 py-2 text-base text-gray-500"
+                href="https://www.medtronic.com/us-en/healthcare-professionals/products/cardiac-rhythm/managing-patients/information-systems/carelink-network.html"
+                className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
               >
-                New Patient Forms
+                Medtronic Portal
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="https://www.abbott.com/"
+                className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
+              >
+                Abbot Portal
               </Disclosure.Button>
             </div>
           </Disclosure.Panel>
