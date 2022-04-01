@@ -49,15 +49,15 @@ export default function Example() {
                       Our Services
                     </a>
                   </Link>
-                  <Link href="/patient-resources">
+                  <Link href="/patient-forms">
                     <a
-                      href="patient-resources"
+                      href="patient-forms"
                       className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
                     >
-                      Patient Resources
+                      Patient Forms
                     </a>
                   </Link>
-
+                  {/* TODO: update these Jacob */}
                   <a
                     href="about-us"
                     className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
@@ -76,11 +76,18 @@ export default function Example() {
                   >
                     FAQ
                   </a>
+
                   <a
-                    href="patient-resources/#new-patient-forms"
+                    href="https://www.medtronic.com/us-en/healthcare-professionals/products/cardiac-rhythm/managing-patients/information-systems/carelink-network.html"
                     className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
                   >
-                    New Patient Forms
+                    Medtronic Portal
+                  </a>
+                  <a
+                    href="https://www.abbott.com/"
+                    className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
+                  >
+                    Abbot Portal
                   </a>
                 </div>
               </div>
@@ -110,10 +117,10 @@ export default function Example() {
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="patient-resources"
+                href="patient-forms"
                 className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
               >
-                Patient Resources
+                Patient Forms
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
@@ -135,13 +142,6 @@ export default function Example() {
                 className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
               >
                 FAQ
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="patient-resources/#new-patient-forms"
-                className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
-              >
-                New Patient Forms
               </Disclosure.Button>
             </div>
           </Disclosure.Panel>

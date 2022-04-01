@@ -12,22 +12,22 @@ export default function PatientResources() {
     {
       id: 0,
       name: 'new-patient-forms',
-      href: '/patient-resources/new-patient-forms.pdf',
+      href: '/patient-forms/new-patient-forms.pdf',
     },
     {
       id: 1,
       name: 'catherization-instructions',
-      href: '/patient-resources/catherization-instructions.pdf',
+      href: '/patient-forms/catherization-instructions.pdf',
     },
     {
       id: 2,
       name: 'nuclear-stress-test',
-      href: '/patient-resources/nuclear-stress-test.pdf',
+      href: '/patient-forms/nuclear-stress-test.pdf',
     },
     {
       id: 3,
       name: 'office-directions',
-      href: '/patient-resources/office-directions.pdf',
+      href: '/patient-forms/office-directions.pdf',
     },
   ];
 
@@ -52,7 +52,7 @@ export default function PatientResources() {
       <main>
         <section className="">
           <Hero
-            title="Patient Resources"
+            title="Patient Forms"
             description="Redding’s premier cardiology services"
           />
           <Background image="pattern2.png" width={300} height={300}>

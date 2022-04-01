@@ -6,11 +6,15 @@ const navigation = {
   links: [
     { name: `Home`, href: `#` },
     { name: `Our Services`, href: `/our-services` },
-    { name: `Patient Resources`, href: `/patient-resources` },
+    { name: `Patient Forms`, href: `/patient-forms` },
     { name: `About Us`, href: `/about-us` },
     { name: `Contact`, href: `/contact` },
     { name: `FAQ`, href: `/contact/faq` },
-    { name: `New Patient Forms`, href: `/patient-resources/new-patient-forms` },
+    {
+      name: `Medtronic Portal`,
+      href: `https://www.medtronic.com/us-en/healthcare-professionals/products/cardiac-rhythm/managing-patients/information-systems/carelink-network.html`,
+    },
+    { name: `Abbot Portal`, href: `https://www.abbott.com/` },
   ],
   support: [
     {
