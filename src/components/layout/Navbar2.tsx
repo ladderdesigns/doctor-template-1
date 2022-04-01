@@ -143,6 +143,20 @@ export default function Example() {
               >
                 FAQ
               </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="https://www.medtronic.com/us-en/healthcare-professionals/products/cardiac-rhythm/managing-patients/information-systems/carelink-network.html"
+                className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
+              >
+                Medtronic Portal
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="https://www.abbott.com/"
+                className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
+              >
+                Abbot Portal
+              </Disclosure.Button>
             </div>
           </Disclosure.Panel>
         </>
