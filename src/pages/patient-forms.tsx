@@ -7,7 +7,7 @@ import Seo from '@/components/Seo';
 import Background from '../components/Background';
 import Hero from '../components/Hero';
 
-export default function PatientResources() {
+export default function PatientForms() {
   const items = [
     {
       id: 0,
@@ -16,8 +16,8 @@ export default function PatientResources() {
     },
     {
       id: 1,
-      name: 'catherization-instructions',
-      href: '/patient-forms/catherization-instructions.pdf',
+      name: 'cardiac-catherization-instructions',
+      href: '/patient-forms/cardiac-catherization-instructions.pdf',
     },
     {
       id: 2,
