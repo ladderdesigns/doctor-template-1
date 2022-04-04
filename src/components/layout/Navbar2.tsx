@@ -1,4 +1,5 @@
-/* This example requires Tailwind CSS v2.0+ */
+/* eslint-disable @next/next/no-html-link-for-pages */
+
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Image from 'next/image';
@@ -44,51 +45,61 @@ export default function Example() {
                   <Link href="/our-services">
                     <a
                       href="our-services"
-                      className="border-b-2 focus:text-gray-700 font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
+                      className="border-b-2 focus:border-red-500 focus:text-gray-700 font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
                     >
                       Our Services
                     </a>
                   </Link>
+                  {/* TODO: color should remain the same when you click on the Navbar links */}
                   <Link href="/patient-forms">
                     <a
-                      href="patient-forms"
-                      className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
+                      href="/patient-forms"
+                      className="border-b-2 border-transparent focus:border-red-500 focus:text-gray-700 font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
                     >
                       Patient Forms
                     </a>
                   </Link>
-                  {/* TODO: update these Jacob */}
-                  <a
-                    href="about-us"
-                    className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
-                  >
-                    About Us
-                  </a>
-                  <a
-                    href="contact"
-                    className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
-                  >
-                    Contact
-                  </a>
-                  <a
-                    href="contact/#faq"
-                    className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
-                  >
-                    FAQ
-                  </a>
+                  <Link href="/about-us">
+                    <a
+                      href="about-us"
+                      className="border-b-2 border-transparent focus:border-red-500 focus:text-gray-700 font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
+                    >
+                      About Us
+                    </a>
+                  </Link>
+                  <Link href="/contact">
+                    <a
+                      href="contact"
+                      className="border-b-2 border-transparent focus:border-red-500 focus:text-gray-700 font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
+                    >
+                      Contact
+                    </a>
+                  </Link>
+                  <Link href="/contact/#faq">
+                    <a
+                      href="contact/#faq"
+                      className="border-b-2 border-transparent focus:border-red-500 focus:text-gray-700 font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
+                    >
+                      FAQ
+                    </a>
+                  </Link>
 
-                  <a
-                    href="https://www.medtronic.com/us-en/healthcare-professionals/products/cardiac-rhythm/managing-patients/information-systems/carelink-network.html"
-                    className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
-                  >
-                    Medtronic Portal
-                  </a>
-                  <a
-                    href="https://www.abbott.com/"
-                    className="border-b-2 border-transparent font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
-                  >
-                    Abbot Portal
-                  </a>
+                  <Link href="https://www.medtronic.com/us-en/healthcare-professionals/products/cardiac-rhythm/managing-patients/information-systems/carelink-network.html">
+                    <a
+                      href="https://www.medtronic.com/us-en/healthcare-professionals/products/cardiac-rhythm/managing-patients/information-systems/carelink-network.html"
+                      className="border-b-2 border-transparent focus:border-red-500 focus:text-gray-700 font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
+                    >
+                      Medtronic Portal
+                    </a>
+                  </Link>
+                  <Link href="https://www.abbott.com/">
+                    <a
+                      href="https://www.abbott.com/"
+                      className="border-b-2 border-transparent focus:border-red-500 focus:text-gray-700 font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
+                    >
+                      Abbot Portal
+                    </a>
+                  </Link>
                 </div>
               </div>
               <div className="-mr-2 flex items-center lg:hidden">
