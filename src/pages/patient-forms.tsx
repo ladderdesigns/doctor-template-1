@@ -48,7 +48,6 @@ export default function PatientResources() {
     <>
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
-
       <main>
         <section className="">
           <Hero
