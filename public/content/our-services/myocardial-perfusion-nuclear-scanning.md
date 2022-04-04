@@ -1,6 +1,7 @@
 ---
-name: Myocardial perfusion nuclear scanning
-id: 2
+name: Stress testing including myocardial perfusion nuclear scanning
+id: 5
+link: https://www.youtube.com/embed/28CYhgjrBLA
 shortdesc: >
   Myocardial perfusion is an imaging test. It's also called a nuclear stress
   test. We perform it to see how well blood flows through the heart. It also

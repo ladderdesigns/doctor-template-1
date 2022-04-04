@@ -2,7 +2,7 @@ import { Disclosure } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/outline';
 import fs from 'fs';
 import matter from 'gray-matter';
-import * as React from 'react';
+import React, { useEffect } from 'react';
 
 import Background from '../components/Background';
 import Hero from '../components/Hero';
@@ -26,6 +26,14 @@ interface Props {
 }
 
 export default function OurServices({ services }: Props) {
+  useEffect(() => {
+    console.log(services);
+    services.sort((a, b) => {
+      return a.data.id - b.data.id;
+    });
+    console.log(services);
+  }, []);
+
   return (
     <>
       {/* <Seo templateTitle='Home' /> */}
