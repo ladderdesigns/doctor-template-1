@@ -207,7 +207,7 @@ export default function Footer() {
             &copy; Created by{` `}2022{` `}
             <Link href="https://ladderdesigns.co">
               <a
-                className="font-bold hover:opacity-75 underline"
+                className="font-bold hover:text-gray-500 underline"
                 href="https://ladderdesigns.co"
               >
                 Ladder Designs

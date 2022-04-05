@@ -35,7 +35,7 @@ export default function Index() {
 
             <div className="bg-transparent h-screen w-full"></div>
 
-            <div className="bg-white lg:my-24">
+            <div className="bg-white mb-20 lg:my-24">
               <div className="bg-red-800 pb-16 lg:pb-0 lg:relative lg:z-10">
                 <div className="lg:gap-8 lg:grid lg:grid-cols-3 lg:max-w-7xl lg:mx-auto lg:px-8">
                   <div className="relative lg:-my-8">
