@@ -55,7 +55,7 @@ export default function PatientForms() {
             description="Redding’s premier cardiology services"
           />
           <Background image="pattern2.png" width={300} height={300}>
-            <div className="py-16 w-full">
+            <div className="my-auto py-16 w-full">
               <div className="max-w-md mx-auto px-4 py-8 relative sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="bg-white divide-gray-200 divide-y-2 max-w-3xl mx-auto p-6 relative rounded-xl shadow-sm">
                   <h2 className="font-semibold text-2xl text-center tracking-tight sm:text-3xl">

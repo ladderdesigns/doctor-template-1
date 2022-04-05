@@ -39,8 +39,8 @@ export default function AboutUs({ employees }: Props) {
             description="Redding’s premier cardiology services"
           />
           <Background image="pattern2.png" width={300} height={300}>
-            <div className="my-auto py-16 rounded-xl shadow-xl w-full">
-              <div className="bg-white mx-12 px-4 py-8 relative rounded-xl shadow-sm sm:max-w-3xl sm:px-6 md:mx-auto lg:max-w-5xl lg:px-8">
+            <div className="my-auto px-4 py-16 w-full">
+              <div className="bg-white max-w-md mx-auto px-4 py-8 relative rounded-xl shadow-sm sm:max-w-3xl sm:px-6 md:mx-auto lg:max-w-5xl lg:px-8">
                 <div className="space-y-12 lg:gap-8 lg:grid lg:grid-cols-3 lg:space-y-0">
                   <div className="space-y-5 sm:space-y-4">
                     <h2 className="font-semibold text-3xl tracking-tight sm:text-4xl">
