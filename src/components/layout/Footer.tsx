@@ -148,12 +148,14 @@ export default function Footer() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.links.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="hover:text-gray-900 text-base text-gray-500"
-                      >
-                        {item.name}
-                      </a>
+                      <Link href={item.href}>
+                        <a
+                          href={item.href}
+                          className="hover:text-gray-900 text-base text-gray-500"
+                        >
+                          {item.name}
+                        </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -171,19 +173,24 @@ export default function Footer() {
                   <p>Fri: 8 AM - 12 PM </p>
                   <p>Sat - Sun: Closed </p>
                 </address>
-                <a
-                  href="mailto:info@drchandramouli.com"
-                  className="hover:text-gray-900 text-base text-gray-500 underline"
-                >
-                  info@drchandramouli.com
-                </a>
+                <Link href="mailto:info@drchandramouli.com">
+                  <a
+                    href="mailto:info@drchandramouli.com"
+                    className="hover:text-gray-900 text-base text-gray-500 underline"
+                  >
+                    info@drchandramouli.com
+                  </a>
+                </Link>
+
                 <br />
-                <a
-                  href="tel:530-123-4567"
-                  className="hover:text-gray-900 text-base text-gray-500 underline"
-                >
-                  +1 (530) 244-4471
-                </a>
+                <Link href="tel:530-123-4567">
+                  <a
+                    href="tel:530-123-4567"
+                    className="hover:text-gray-900 text-base text-gray-500 underline"
+                  >
+                    +1 (530) 244-4471
+                  </a>
+                </Link>
               </div>
             </div>
             <div className="space-y-8 md:ml-8 xl:col-span-1">
@@ -198,12 +205,14 @@ export default function Footer() {
         <div className="border-gray-200 border-t mt-12 pt-8">
           <p className="text-base text-gray-400 xl:text-center">
             &copy; Created by{` `}2022{` `}
-            <a
-              className="font-bold hover:opacity-75 underline"
-              href="https://ladderdesigns.co"
-            >
-              Ladder Designs
-            </a>
+            <Link href="https://ladderdesigns.co">
+              <a
+                className="font-bold hover:text-gray-500 underline"
+                href="https://ladderdesigns.co"
+              >
+                Ladder Designs
+              </a>
+            </Link>
             . All rights reserved.
           </p>
         </div>

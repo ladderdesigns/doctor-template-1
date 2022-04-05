@@ -5,7 +5,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Example() {
+export default function Navbar2() {
   return (
     <Disclosure as="nav" className="bg-white shadow">
       {({ open }) => (
