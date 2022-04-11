@@ -1,0 +1,38 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+local_backend: true
+media_folder: public/img
+public_folder: img
+collections:
+  - label: 'Employees'
+    name: 'employees'
+    folder: 'content/employees'
+    create: true
+    identifier_field: name
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'ID', name: 'id', widget: 'number' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Credentials', name: 'creds', widget: 'string' }
+      - { label: 'Biography', name: 'bio', widget: 'markdown' }
+      - { label: 'Short Biography', name: 'shortbio', widget: 'string' }
+      - { label: 'Image', name: 'img', widget: 'image' }
+      - { label: 'Active', name: 'active', widget: 'boolean' }
+  - label: 'Our Services'
+    name: 'our-services'
+    folder: 'content/our-services'
+    create: true
+    identifier_field: name
+    sortable_fields: ['id', 'ID']
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'ID', name: 'id', widget: 'number' }
+      - { label: 'Link', name: 'link', widget: 'string' }
+      - { label: 'Short Description', name: 'shortdesc', widget: 'markdown' }
+      - {
+          label: 'Description',
+          name: 'desc',
+          widget: 'markdown',
+          required: false,
+        }
