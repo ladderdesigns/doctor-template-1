@@ -33,7 +33,32 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="bg-transparent h-screen w-full"></div>
+            <div className="bg-red-800 mt-20">
+              <div className="max-w-7xl mx-auto py-24 sm:px-2 sm:py-32 lg:px-4">
+                <div className="max-w-2xl mx-auto px-4 lg:max-w-none">
+                  <div className="gap-x-16 gap-y-10 grid grid-cols-1 items-center lg:grid-cols-2">
+                    <div>
+                      <h2 className="font-extrabold text-4xl text-white tracking-tight">
+                        We pride ourselves on treating patients like family.
+                      </h2>
+                      <p className="mt-4 text-white">
+                        We are Redding&apos;s premier cardiology practice. With
+                        over 20 years experience and a comprehensive range of
+                        both invasive and noninvasive options, let us help you
+                        achieve the health that you&apos;ve always wanted.
+                      </p>
+                    </div>
+                    <div className="aspect-h-2 aspect-w-3 bg-gray-100 overflow-hidden rounded-lg">
+                      <img
+                        src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3072&q=80"
+                        alt=""
+                        className="object-center object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div className="bg-white mb-20 lg:my-24">
               <div className="bg-red-800 pb-16 lg:pb-0 lg:relative lg:z-10">

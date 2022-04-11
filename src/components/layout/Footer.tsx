@@ -14,7 +14,6 @@ const navigation = {
       name: `Medtronic Portal`,
       href: `https://www.medtronic.com/us-en/healthcare-professionals/products/cardiac-rhythm/managing-patients/information-systems/carelink-network.html`,
     },
-    { name: `Abbot Portal`, href: `https://www.abbott.com/` },
   ],
   support: [
     {

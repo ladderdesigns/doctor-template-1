@@ -92,14 +92,6 @@ export default function Navbar2() {
                       Medtronic Portal
                     </a>
                   </Link>
-                  <Link href="https://www.abbott.com/">
-                    <a
-                      href="https://www.abbott.com/"
-                      className="border-b-2 border-transparent focus:border-red-500 focus:text-gray-700 font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
-                    >
-                      Abbot Portal
-                    </a>
-                  </Link>
                 </div>
               </div>
               <div className="-mr-2 flex items-center lg:hidden">
@@ -160,13 +152,6 @@ export default function Navbar2() {
                 className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
               >
                 Medtronic Portal
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="https://www.abbott.com/"
-                className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
-              >
-                Abbot Portal
               </Disclosure.Button>
             </div>
           </Disclosure.Panel>

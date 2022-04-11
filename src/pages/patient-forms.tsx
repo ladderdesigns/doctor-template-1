@@ -37,11 +37,6 @@ export default function PatientForms() {
       name: 'Medtronic - The Carelink Network (patient portal) ',
       href: 'https://www.medtronic.com/us-en/healthcare-professionals/products/cardiac-rhythm/managing-patients/information-systems/carelink-network.html',
     },
-    {
-      id: 1,
-      name: 'Abbot (patient portal)',
-      href: 'https://www.abbott.com/',
-    },
   ];
 
   return (
