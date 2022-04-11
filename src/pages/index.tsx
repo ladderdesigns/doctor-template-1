@@ -38,7 +38,7 @@ export default function Index() {
                 <div className="max-w-2xl mx-auto px-4 lg:max-w-none">
                   <div className="gap-x-16 gap-y-10 grid grid-cols-1 items-center lg:grid-cols-2">
                     <div>
-                      <h2 className="font-extrabold text-4xl text-white tracking-tight">
+                      <h2 className="font-bold text-4xl text-white tracking-tight">
                         We pride ourselves on treating patients like family.
                       </h2>
                       <p className="mt-4 text-white">
