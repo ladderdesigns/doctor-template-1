@@ -60,13 +60,13 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="bg-white mb-20 lg:my-24">
+            <div className="bg-transparent mb-20 mt-20 sm:mt-0 lg:my-24">
               <div className="bg-red-800 pb-16 lg:pb-0 lg:relative lg:z-10">
                 <div className="lg:gap-8 lg:grid lg:grid-cols-3 lg:max-w-7xl lg:mx-auto lg:px-8">
                   <div className="relative lg:-my-8">
                     <div
                       aria-hidden="true"
-                      className="absolute bg-white h-1/2 inset-x-0 top-0 lg:hidden"
+                      className="absolute bg-white h-1/2 inset-x-0 top-0 z-0 lg:hidden"
                     />
                     <div className="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:h-full lg:p-0">
                       <div className="aspect-h-6 aspect-w-10 overflow-hidden rounded-xl shadow-xl sm:aspect-h-7 sm:aspect-w-16 lg:aspect-none lg:h-full">

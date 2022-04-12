@@ -25,28 +25,52 @@ const faqs = [
   },
   {
     id: 5,
-    question: 'What should I wear before a nuclear stress test?',
-    answer:
-      'Please wear comfortable clothes and comfortable shoes for walking the treadmill.',
+    question: 'How long will I have my pacemaker?',
+    answer: 'Most pacemakers last for a time between 8 and 10 years.',
   },
   {
     id: 6,
+    question: 'Will common electronics interfere with my pacemaker?',
+    answer:
+      'Most electric and electronic equipment in the home will not interfere with a pacemaker. For example, people with a pacemaker can safely use household appliances such as microwave ovens, home computers, and TV remotes.',
+  },
+  {
+    id: 7,
+    question: 'Will I be able to feel my pacemaker?',
+    answer:
+      'Most people will not have any sensation of the pacemaker under their skin. Immediately after the procedure, you will have some soreness in your upper chest where the pacemaker was implanted, but it should go away in time.',
+  },
+  {
+    id: 8,
+    question:
+      'I am planning to travel. Can I go through the metal detectors and security checkpoints in the airport?',
+    answer:
+      'As you pass through a metal detector, the metal in your pacemaker may set off the alarm in the security machinery. However, this will not interfere with the workings of the pacemaker. If you are concerned, you can request an alternate form of screening.',
+  },
+  {
+    id: 9,
+    question: 'Will anyone be able to see my pacemaker through my clothes?',
+    answer:
+      'No. You may be aware of a very slight bump under your skin, but it will not be noticeable to most people.',
+  },
+  {
+    id: 10,
     question: 'Do I need to fast before a nuclear stress test?',
     answer:
       'Yes, please fast for four hours before your appointment. This includes no caffeine and no chocolate for 24 hours. Additionally, please do not take any beta blockers. ',
   },
   {
-    id: 7,
+    id: 11,
     question: 'Do I need to fast before a cholestral screening?',
     answer: 'Yes, please avoid food and caffeine for 12 hours beforehand.',
   },
   {
-    id: 8,
+    id: 12,
     question: 'How should I prepare for an echocardiogram?',
     answer: 'No pereparation is required for an echocardiogram.',
   },
   {
-    id: 9,
+    id: 13,
     question: 'What should be my diet when I am on Coumadin?',
     answer:
       "Coumadin is a blood-thinning medication that helps treat and prevent blood clots from occurring. There are specific foods and beverages that can weaken Coumadin's ability to prevent blood clots. When taking Coumadin avoid or consume small amounts of alcohol and cranberry juice. Additionally, avoid consuming foods that contain large amounts of Vitamin K such as kale, spinach, and broccoli. Consume these green leafy vegetables with a relatively fixed frequency, such as once or twice a week.",
