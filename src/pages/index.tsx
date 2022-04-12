@@ -23,7 +23,7 @@ export default function Index() {
                   />
                   <h2 className="absolute bottom-6 font-bold left-4 text-white text-xl md:bottom-12 md:left-8 md:text-3xl lg:text-5xl">
                     {' '}
-                    Dr. B. V. Chandramouli{' '}
+                    Dr. B.V. Chandramouli{' '}
                   </h2>
                   <h3 className="absolute bottom-1 font-light left-4 text-lg text-white md:bottom-5 md:left-8 md:text-2xl lg:text-3xl">
                     {' '}

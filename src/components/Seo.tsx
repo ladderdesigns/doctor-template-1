@@ -5,9 +5,9 @@ import { openGraph } from '@/lib/helper';
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: `Dr. B. V. Chandramouli`,
-  siteName: `Dr. B. V. Chandramouli`,
-  description: `Dr. B. V. Chandramouli, MD is a Interventional Cardiology Specialist in Redding, CA.`,
+  title: `Dr. B.V. Chandramouli`,
+  siteName: `Dr. B.V. Chandramouli`,
+  description: `Dr. B.V. Chandramouli, MD is an Interventional Cardiology Specialist in Redding, CA.`,
   url: `https://drchandramouli.com`,
   image: `https://theodorusclarence.com/favicon/large-og.jpg`,
   type: `website`,
