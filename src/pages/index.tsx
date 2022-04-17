@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import * as React from 'react';
 
 import Background from '@/components/Background';
@@ -16,6 +17,7 @@ export default function Index() {
               <div className="-pb-24 max-w-md mx-auto px-4 relative sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="relative">
                   <div className="absolute bg-gradient-to-t from-black h-full opacity-40 rounded-xl via-gray-500 w-full" />
+
                   <img
                     src="/team.png"
                     className="object-cover rounded-xl w-full"
@@ -23,7 +25,7 @@ export default function Index() {
                   />
                   <h2 className="absolute bottom-6 font-bold left-4 text-white text-xl md:bottom-12 md:left-8 md:text-3xl lg:text-5xl">
                     {' '}
-                    Dr. B. V. Chandramouli{' '}
+                    Dr. B.V. Chandramouli{' '}
                   </h2>
                   <h3 className="absolute bottom-1 font-light left-4 text-lg text-white md:bottom-5 md:left-8 md:text-2xl lg:text-3xl">
                     {' '}
@@ -33,12 +35,12 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="bg-red-800 mt-20">
-              <div className="max-w-7xl mx-auto py-24 sm:px-2 sm:py-32 lg:px-4">
-                <div className="max-w-2xl mx-auto px-4 lg:max-w-none">
-                  <div className="gap-x-16 gap-y-10 grid grid-cols-1 items-center lg:grid-cols-2">
+            {/* <div className="mt-20 bg-red-800">
+              <div className="py-24 mx-auto max-w-7xl sm:px-2 sm:py-32 lg:px-4">
+                <div className="max-w-2xl px-4 mx-auto lg:max-w-none">
+                  <div className="grid items-center grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-2">
                     <div>
-                      <h2 className="font-bold text-4xl text-white tracking-tight">
+                      <h2 className="text-4xl font-bold tracking-tight text-white">
                         We pride ourselves on treating patients like family.
                       </h2>
                       <p className="mt-4 text-white">
@@ -48,25 +50,25 @@ export default function Index() {
                         achieve the health that you&apos;ve always wanted.
                       </p>
                     </div>
-                    <div className="aspect-h-2 aspect-w-3 bg-gray-100 overflow-hidden rounded-lg">
+                    <div className="overflow-hidden bg-gray-100 rounded-lg aspect-h-2 aspect-w-3">
                       <img
                         src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3072&q=80"
                         alt=""
-                        className="object-center object-cover"
+                        className="object-cover object-center"
                       />
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="bg-white mb-20 lg:my-24">
+            <div className="bg-transparent mb-20 mt-20 sm:mt-0 lg:my-24">
               <div className="bg-red-800 pb-16 lg:pb-0 lg:relative lg:z-10">
                 <div className="lg:gap-8 lg:grid lg:grid-cols-3 lg:max-w-7xl lg:mx-auto lg:px-8">
                   <div className="relative lg:-my-8">
                     <div
                       aria-hidden="true"
-                      className="absolute bg-white h-1/2 inset-x-0 top-0 lg:hidden"
+                      className="absolute bg-white h-1/2 inset-x-0 top-0 z-0 lg:hidden"
                     />
                     <div className="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:h-full lg:p-0">
                       <div className="aspect-h-6 aspect-w-10 overflow-hidden rounded-xl shadow-xl sm:aspect-h-7 sm:aspect-w-16 lg:aspect-none lg:h-full">

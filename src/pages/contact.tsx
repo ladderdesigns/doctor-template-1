@@ -11,6 +11,7 @@ export default function Contact() {
   return (
     <>
       {/* <Seo templateTitle='Home' /> */}
+      {/*  */}
       <Seo />
 
       <main>

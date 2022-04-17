@@ -2,6 +2,7 @@ import { Disclosure } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/outline';
 import fs from 'fs';
 import matter from 'gray-matter';
+import Link from 'next/link';
 import React, { useEffect } from 'react';
 
 import Background from '../components/Background';
@@ -20,6 +21,7 @@ interface Props {
         id: number;
         shortdesc: string;
         link: string;
+        readmore: string;
       };
     },
   ];
@@ -27,11 +29,9 @@ interface Props {
 
 export default function OurServices({ services }: Props) {
   useEffect(() => {
-    console.log(services);
     services.sort((a, b) => {
       return a.data.id - b.data.id;
     });
-    console.log(services);
   }, []);
 
   return (
@@ -81,6 +81,11 @@ export default function OurServices({ services }: Props) {
                               <p className="text-base text-gray-500">
                                 {service.data.shortdesc}
                               </p>
+                              <Link href={service.data.readmore}>
+                                <a className="text-blue-500 underline">
+                                  Read more
+                                </a>
+                              </Link>
                               {/* Only show the video link if a video exists for that service */}
                               {service.data.link && (
                                 <div className="aspect-h-9 aspect-w-16 mt-4">
