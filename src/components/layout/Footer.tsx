@@ -180,7 +180,6 @@ export default function Footer() {
                     info@drchandramouli.com
                   </a>
                 </Link>
-
                 <br />
                 <Link href="tel:530-123-4567">
                   <a

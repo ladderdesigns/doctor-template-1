@@ -29,11 +29,9 @@ interface Props {
 
 export default function OurServices({ services }: Props) {
   useEffect(() => {
-    console.log(services);
     services.sort((a, b) => {
       return a.data.id - b.data.id;
     });
-    console.log(services);
   }, []);
 
   return (
