@@ -141,7 +141,7 @@ export default function Footer() {
           <div className="gap-8 grid grid-cols-1 mt-12 md:grid-cols-2 xl:col-span-2 xl:mt-0">
             <div className="md:gap-8 md:grid md:grid-cols-2">
               <div>
-                <h3 className="font-semibold text-gray-400 text-sm tracking-wider uppercase">
+                <h3 className="font-semibold text-gray-500 text-sm tracking-wider uppercase">
                   Links
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
@@ -160,7 +160,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="font-semibold text-gray-400 text-sm tracking-wider uppercase">
+                <h3 className="font-semibold text-gray-500 text-sm tracking-wider uppercase">
                   Find us
                 </h3>
                 <address className="mb-8 mt-4 text-base text-gray-500">
@@ -193,6 +193,7 @@ export default function Footer() {
             </div>
             <div className="space-y-8 md:ml-8 xl:col-span-1">
               <iframe
+                title="map with directions"
                 frameBorder="0"
                 className="h-64 overflow-hidden w-64"
                 src="https://www.google.com/maps/embed/v1/place?q=1555+East+St+Redding,+California+96001&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"

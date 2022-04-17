@@ -15,7 +15,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head></Head>
+        <Head>
+          <meta httpEquiv="Content-Security-Policy" content=""></meta>
+        </Head>
         <body>
           <Main />
           <NextScript />
