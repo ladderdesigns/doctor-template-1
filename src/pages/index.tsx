@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import * as React from 'react';
 
 import Background from '@/components/Background';
@@ -16,6 +17,7 @@ export default function Index() {
               <div className="-pb-24 max-w-md mx-auto px-4 relative sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="relative">
                   <div className="absolute bg-gradient-to-t from-black h-full opacity-40 rounded-xl via-gray-500 w-full" />
+
                   <img
                     src="/team.png"
                     className="object-cover rounded-xl w-full"
