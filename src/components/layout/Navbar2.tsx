@@ -50,7 +50,6 @@ export default function Navbar2() {
                       Our Services
                     </a>
                   </Link>
-                  {/* TODO: color should remain the same when you click on the Navbar links */}
                   <Link href="/patient-forms">
                     <a
                       href="/patient-forms"
