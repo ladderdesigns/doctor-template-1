@@ -31,6 +31,7 @@ export default function PatientForms() {
     },
   ];
 
+  // decided to leave a link to Medtronic here and removed from everywhere else
   const items2 = [
     {
       id: 0,

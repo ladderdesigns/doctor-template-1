@@ -10,10 +10,6 @@ const navigation = {
     { name: `About Us`, href: `/about-us` },
     { name: `Contact`, href: `/contact` },
     { name: `FAQ`, href: `/contact/faq` },
-    {
-      name: `Medtronic Portal`,
-      href: `https://www.medtronic.com/us-en/healthcare-professionals/products/cardiac-rhythm/managing-patients/information-systems/carelink-network.html`,
-    },
   ],
   support: [
     {
