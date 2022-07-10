@@ -16,21 +16,23 @@ export default function PatientForms() {
     },
     {
       id: 1,
-      name: 'cardiac-catherization-instructions',
-      href: '/patient-forms/cardiac-catherization-instructions.pdf',
+      name: 'cardiac-catherization',
+      href: '/patient-forms/cardiac-catherization.pdf',
     },
     {
       id: 2,
       name: 'nuclear-stress-test',
       href: '/patient-forms/nuclear-stress-test.pdf',
     },
-    {
-      id: 3,
-      name: 'office-directions',
-      href: '/patient-forms/office-directions.pdf',
-    },
+    // add this when we have the actual office directions from Dr. Chan
+    // {
+    //   id: 3,
+    //   name: 'office-directions',
+    //   href: '/patient-forms/office-directions.pdf',
+    // },
   ];
 
+  // decided to leave a link to Medtronic here and removed from everywhere
   const items2 = [
     {
       id: 0,

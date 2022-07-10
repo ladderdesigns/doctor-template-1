@@ -83,15 +83,6 @@ export default function Navbar2() {
                       FAQ
                     </a>
                   </Link>
-
-                  <Link href="https://www.medtronic.com/us-en/healthcare-professionals/products/cardiac-rhythm/managing-patients/information-systems/carelink-network.html">
-                    <a
-                      href="https://www.medtronic.com/us-en/healthcare-professionals/products/cardiac-rhythm/managing-patients/information-systems/carelink-network.html"
-                      className="border-b-2 border-transparent focus:border-red-500 focus:text-gray-700 font-medium hover:border-red-500 hover:text-gray-700 inline-flex items-center pt-1 px-1 text-gray-500 text-md"
-                    >
-                      Medtronic Portal
-                    </a>
-                  </Link>
                 </div>
               </div>
               <div className="-mr-2 flex items-center lg:hidden">
@@ -145,13 +136,6 @@ export default function Navbar2() {
                 className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
               >
                 FAQ
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="https://www.medtronic.com/us-en/healthcare-professionals/products/cardiac-rhythm/managing-patients/information-systems/carelink-network.html"
-                className="block border-l-4 focus:bg-red-50 focus:border-red-500 focus:text-red-700 font-medium pl-3 pr-4 py-2 text-base text-gray-500"
-              >
-                Medtronic Portal
               </Disclosure.Button>
             </div>
           </Disclosure.Panel>
