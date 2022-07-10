@@ -15,14 +15,14 @@ export default function Index() {
           <Background image="pattern2.png" width={300} height={300}>
             <div className="bg-red-800 py-16 w-full">
               <div className="-pb-24 max-w-md mx-auto px-4 relative sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-                <div className="relative">
+                <div className="mt-48 relative md:mt-64 xl:mt-96">
                   <div className="absolute bg-gradient-to-t from-black h-full opacity-40 rounded-xl via-gray-500 w-full" />
 
-                  <img
-                    src="/team.png"
-                    className="object-cover rounded-xl w-full"
-                    alt=""
-                  />
+                  {/* <img
+                      src="/team.png"
+                      className="object-cover w-full bg-transparent rounded-xl"
+                      alt=""
+                    /> */}
                   <h2 className="absolute bottom-6 font-bold left-4 text-white text-xl md:bottom-12 md:left-8 md:text-3xl lg:text-5xl">
                     {' '}
                     Dr. B.V. Chandramouli{' '}
