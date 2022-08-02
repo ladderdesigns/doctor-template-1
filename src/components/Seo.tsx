@@ -97,14 +97,14 @@ type Favicons = {
 // then replace the whole /public/favicon folder
 const favicons: Array<Favicons> = [
   {
-    rel: `apple-touch-icon`,
-    sizes: `57x57`,
-    href: `/favicon/apple-icon-57x57.png`,
+    rel: `android-chrome-384x384`,
+    sizes: `512x512`,
+    href: `/favicons/android-chrome-384x384.png`,
   },
   {
-    rel: `apple-touch-icon`,
-    sizes: `60x60`,
-    href: `/favicon/apple-icon-60x60.png`,
+    rel: `android-chrome-192x192`,
+    sizes: `192x192`,
+    href: `/favicons/android-chrome-192x192.png`,
   },
   {
     rel: `apple-touch-icon`,
@@ -167,6 +167,6 @@ const favicons: Array<Favicons> = [
   },
   {
     rel: `manifest`,
-    href: `/favicon/manifest.json`,
+    href: `/favicon/site.webmanifest`,
   },
 ];

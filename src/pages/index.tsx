@@ -62,7 +62,7 @@ export default function Index() {
               </div>
             </div> */}
 
-            <div className="bg-transparent mb-20 mt-20 sm:mt-0 lg:my-24">
+            <div className="bg-transparent mb-20 mt-8 sm:mt-12 lg:my-24">
               <div className="bg-red-800 pb-16 lg:pb-0 lg:relative lg:z-10">
                 <div className="lg:gap-8 lg:grid lg:grid-cols-3 lg:max-w-7xl lg:mx-auto lg:px-8">
                   <div className="relative lg:-my-8">
