@@ -26,8 +26,7 @@
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-icons": "^4.3.1",
-    "yarn": "1.22.19"
+    "react-icons": "^4.3.1"
   },
   "devDependencies": {
     "@babel/core": "7.17.5",

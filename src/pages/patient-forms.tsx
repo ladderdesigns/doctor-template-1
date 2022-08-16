@@ -49,7 +49,7 @@ export default function PatientForms() {
         <section className="">
           <Hero
             title="Patient Forms"
-            description="Redding’s premier cardiology services"
+            description="Redding’s Premier Cardiology Services"
           />
           <Background image="pattern2.png" width={300} height={300}>
             <div className="my-auto py-16 w-full">

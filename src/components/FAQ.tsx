@@ -21,7 +21,7 @@ const faqs = [
     id: 4,
     question: 'Does your office take my insurance?',
     answer:
-      "We are not currently taking any new partnerships, HMO's, or medicare advantage plans.",
+      "We are not currently taking any new parternships, HMO's, or medicare advantage plans.",
   },
   {
     id: 5,
@@ -61,19 +61,19 @@ const faqs = [
   },
   {
     id: 11,
-    question: 'Do I need to fast before a cholesterol screening?',
+    question: 'Do I need to fast before a cholestral screening?',
     answer: 'Yes, please avoid food and caffeine for 12 hours beforehand.',
   },
   {
     id: 12,
     question: 'How should I prepare for an echocardiogram?',
-    answer: 'No preparation is required for an echocardiogram.',
+    answer: 'No pereparation is required for an echocardiogram.',
   },
   {
     id: 13,
     question: 'What should be my diet when I am on Coumadin?',
     answer:
-      "Coumadin is a blood-thinning medication that helps treat and prevent blood clots from occurring. There are specific foods and beverages that can weaken Coumadin's ability to prevent blood clots. When taking Coumadin avoid or consume small amounts of alcohol and cranberry juice. Additionally, avoid consuming foods that contain large amounts of vitamin K such as kale, spinach, and broccoli. Consume these green leafy vegetables with a relatively fixed frequency, such as once or twice a week.",
+      "Coumadin is a blood-thinning medication that helps treat and prevent blood clots from occurring. There are specific foods and beverages that can weaken Coumadin's ability to prevent blood clots. When taking Coumadin avoid or consume small amounts of alcohol and cranberry juice. Additionally, avoid consuming foods that contain large amounts of Vitamin K such as kale, spinach, and broccoli. Consume these green leafy vegetables with a relatively fixed frequency, such as once or twice a week.",
   },
 
   // More questions...
