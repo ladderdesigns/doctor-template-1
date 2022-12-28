@@ -21,6 +21,7 @@ interface Props {
         id: number;
         shortdesc: string;
         link: string;
+        video: string;
         readmore: string;
       };
     },
@@ -77,25 +78,22 @@ export default function OurServices({ services }: Props) {
                                 </span>
                               </Disclosure.Button>
                             </dt>
-                            <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                              <p className="text-base text-gray-500">
+                            <Disclosure.Panel as="dd" className="my-2 pr-12">
+                              <p className="pb-2 text-base text-gray-500">
                                 {service.data.shortdesc}
                               </p>
-                              <Link href={service.data.readmore}>
-                                <a className="text-blue-500 underline">
+                              <Link href={service.data.link}>
+                                <a className="pr-4 text-blue-500 underline">
                                   Read more
                                 </a>
                               </Link>
                               {/* Only show the video link if a video exists for that service */}
                               {service.data.link && (
-                                <div className="aspect-h-9 aspect-w-16 mt-4">
-                                  <iframe
-                                    src={service.data.link}
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
-                                  ></iframe>
-                                </div>
+                                <Link href={service.data.video}>
+                                  <a className="text-blue-500 underline">
+                                    Watch video
+                                  </a>
+                                </Link>
                               )}
                             </Disclosure.Panel>
                           </>
