@@ -61,13 +61,13 @@ const faqs = [
   },
   {
     id: 11,
-    question: 'Do I need to fast before a cholestral screening?',
+    question: 'Do I need to fast before a cholesterol screening?',
     answer: 'Yes, please avoid food and caffeine for 12 hours beforehand.',
   },
   {
     id: 12,
     question: 'How should I prepare for an echocardiogram?',
-    answer: 'No pereparation is required for an echocardiogram.',
+    answer: 'No preparation is required for an echocardiogram.',
   },
   {
     id: 13,

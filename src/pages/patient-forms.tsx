@@ -11,17 +11,17 @@ export default function PatientForms() {
   const items = [
     {
       id: 0,
-      name: 'new-patient-forms',
+      name: 'New Patient',
       href: '/patient-forms/new-patient-forms.pdf',
     },
     {
       id: 1,
-      name: 'cardiac-catherization',
+      name: 'Cardiac Catherization',
       href: '/patient-forms/cardiac-catherization.pdf',
     },
     {
       id: 2,
-      name: 'nuclear-stress-test',
+      name: 'Nuclear Stress Test',
       href: '/patient-forms/nuclear-stress-test.pdf',
     },
     // add this when we have the actual office directions from Dr. Chan
@@ -36,7 +36,7 @@ export default function PatientForms() {
   const items2 = [
     {
       id: 0,
-      name: 'Medtronic - The Carelink Network (patient portal) ',
+      name: 'Medtronic Patient Portal',
       href: 'https://www.medtronic.com/us-en/healthcare-professionals/products/cardiac-rhythm/managing-patients/information-systems/carelink-network.html',
     },
   ];
