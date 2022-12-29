@@ -10,8 +10,6 @@ shortdesc: >-
   attack, it may be done to find areas of damaged heart muscle. This test may be
   done during rest and during exercise.
 
-
-  [](https://ufhealth.org/exercise-stress-test)
 desc: >-
   Stress testing is a procedure that is used to evaluate how well the heart
   functions during physical activity. It is often used to diagnose and manage

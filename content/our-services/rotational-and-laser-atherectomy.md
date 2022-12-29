@@ -10,9 +10,6 @@ shortdesc: >-
   or hardened. In this case, the angioplasty is unable to work against the
   plaque. During rotational atherectomy the plaque is ground into minuscule
   particles, which is then cleaned from the bloodstream.
-
-
-  [](https://ufhealth.org/coronary-rotational-atherectomy)
 desc: >-
   Rotational atherectomy and laser atherectomy are medical procedures that are
   used to remove plaque (a buildup of fat, cholesterol, and other substances)

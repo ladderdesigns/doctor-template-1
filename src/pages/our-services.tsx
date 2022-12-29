@@ -20,9 +20,9 @@ interface Props {
         name: string;
         id: number;
         shortdesc: string;
+        desc: string;
         link: string;
         video: string;
-        readmore: string;
       };
     },
   ];
@@ -33,6 +33,7 @@ export default function OurServices({ services }: Props) {
     services.sort((a, b) => {
       return a.data.id - b.data.id;
     });
+    console.log(services[4].data.desc);
   }, []);
 
   return (
@@ -79,16 +80,20 @@ export default function OurServices({ services }: Props) {
                               </Disclosure.Button>
                             </dt>
                             <Disclosure.Panel as="dd" className="my-2 pr-12">
-                              <p className="pb-2 text-base text-gray-500">
-                                {service.data.shortdesc}
+                              <p className="pb-2 text-base text-gray-500 whitespace-pre-wrap">
+                                {service.data.desc}
                               </p>
-                              <Link href={service.data.link}>
-                                <a className="pr-4 text-blue-500 underline">
-                                  Read more
-                                </a>
-                              </Link>
                               {/* Only show the video link if a video exists for that service */}
                               {service.data.link && (
+                                <Link href={service.data.link}>
+                                  <a className="pr-4 text-blue-500 underline">
+                                    Read more
+                                  </a>
+                                </Link>
+                              )}
+
+                              {/* Only show the video link if a video exists for that service */}
+                              {service.data.video && (
                                 <Link href={service.data.video}>
                                   <a className="text-blue-500 underline">
                                     Watch video
@@ -112,11 +117,11 @@ export default function OurServices({ services }: Props) {
 }
 
 export async function getStaticProps() {
-  const files = fs.readdirSync(`${process.cwd()}/public/content/our-services`);
+  const files = fs.readdirSync(`${process.cwd()}/content/our-services`);
 
   const services = files.map((filename) => {
     const markdownWithMetadata = fs
-      .readFileSync(`${process.cwd()}/public/content/our-services/${filename}`)
+      .readFileSync(`${process.cwd()}/content/our-services/${filename}`)
       .toString();
 
     const { data } = matter(markdownWithMetadata);

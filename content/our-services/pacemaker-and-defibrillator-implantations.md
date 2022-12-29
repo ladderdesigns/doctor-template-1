@@ -10,9 +10,6 @@ shortdesc: >-
   defibrillator is a device that monitors your heart rate and delivers a strong
   electrical shock to restore the heartbeat to normal in the event of
   tachycardia.
-
-
-  [](https://ufhealth.org/heart-pacemaker)
 desc: >-
   Pacemaker and defibrillator implantations are medical procedures that are used
   to treat heart rhythm problems.

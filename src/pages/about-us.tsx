@@ -66,7 +66,7 @@ export default function AboutUs({ employees }: Props) {
                           >
                             <div className="aspect-h-2 aspect-w-3">
                               <Image
-                                src={employee.data.img}
+                                src={'/' + employee.data.img}
                                 layout="fill"
                                 alt={employee.data.name}
                                 objectFit="cover"
@@ -80,17 +80,20 @@ export default function AboutUs({ employees }: Props) {
                               </p>
                             </div>
                             <div className="text-lg">
-                              {employee.data.id === 0 && (
-                                <p className="text-gray-500">
-                                  {employee.data.shortbio}
-                                </p>
-                              )}
-                              {employee.data.id === 0 && (
-                                <Link href={'/about-us/' + employee.data.slug}>
-                                  <a className="text-blue-500 underline">
-                                    Read more
-                                  </a>
-                                </Link>
+                              <p className="text-gray-500">
+                                {employee.data.shortbio}
+                              </p>
+
+                              {employee.data.bio && (
+                                <div className="mt-8">
+                                  <Link
+                                    href={'/about-us/' + employee.data.slug}
+                                  >
+                                    <a className="text-blue-500 underline">
+                                      Read more
+                                    </a>
+                                  </Link>
+                                </div>
                               )}
                             </div>
                           </div>
@@ -109,11 +112,11 @@ export default function AboutUs({ employees }: Props) {
 }
 
 export async function getStaticProps() {
-  const files = fs.readdirSync(`${process.cwd()}/public/content/employees`);
+  const files = fs.readdirSync(`${process.cwd()}/content/employees`);
 
   const employees = files.map((filename) => {
     const markdownWithMetadata = fs
-      .readFileSync(`${process.cwd()}/public/content/employees/${filename}`)
+      .readFileSync(`${process.cwd()}/content/employees/${filename}`)
       .toString();
 
     const { data } = matter(markdownWithMetadata);
