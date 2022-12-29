@@ -11,21 +11,24 @@ export default function Index() {
       <main>
         <section className="">
           <Background image="pattern2.png" width={300} height={300}>
-            <div className="bg-red-800 py-16 w-full">
+            <div className="bg-gradient-to-br from-red-700 mb-20 py-16 to-red-900 w-full">
               <div className="-pb-24 max-w-md mx-auto px-4 relative sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="relative">
                   <div className="absolute h-full rounded-xl via-gray-500 w-full" />
-
-                  <img
+                  <Image
                     src="/group-photo.jpeg"
-                    className="bg-transparent object-cover rounded-xl w-full"
+                    className="bg-transparent object-cover rounded-xl shadow-xl w-full"
                     alt=""
+                    priority={true}
+                    width={1920}
+                    height={1080}
+                    style="background: linear-gradient(0deg, #00000033 14%, #ffffff11 100%)"
                   />
-                  <h2 className="absolute bottom-6 font-bold left-4 text-white text-xl md:bottom-12 md:left-8 md:text-3xl lg:text-5xl">
+                  <h2 className="absolute bottom-6 font-bold left-4 shadow-xl text-white text-xl md:bottom-12 md:left-8 md:text-3xl lg:text-5xl">
                     {' '}
                     Dr. B.V. Chandramouli{' '}
                   </h2>
-                  <h3 className="absolute bottom-1 font-light left-4 text-lg text-white md:bottom-5 md:left-8 md:text-2xl lg:text-3xl">
+                  <h3 className="absolute bottom-1 font-light left-4 shadow-xl text-lg text-white md:bottom-5 md:left-8 md:text-2xl lg:text-3xl">
                     {' '}
                     Redding&apos;s Premier Cardiology Services{' '}
                   </h3>
@@ -33,7 +36,7 @@ export default function Index() {
               </div>
             </div>
 
-            {/* <div className="mt-20 bg-red-800">
+            {/* <div className="mb-20 bg-red-800">
               <div className="py-24 mx-auto max-w-7xl sm:px-2 sm:py-32 lg:px-4">
                 <div className="max-w-2xl px-4 mx-auto lg:max-w-none">
                   <div className="grid items-center grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-2">
@@ -60,13 +63,67 @@ export default function Index() {
               </div>
             </div> */}
 
-            <div className="bg-transparent mb-20 mt-8 sm:mt-12 lg:my-24">
-              <div className="bg-red-800 pb-16 lg:pb-0 lg:relative lg:z-10">
+            <div className="bg-transparent mb-20 sm:mt-12 lg:my-24">
+              <div className="bg-red-800 pb-16 pt-1 lg:pb-0 lg:pt-0 lg:relative lg:z-10">
+                <div className="lg:gap-8 lg:grid lg:grid-cols-3 lg:max-w-7xl lg:mx-auto lg:px-8">
+                  <div className="mt-12 lg:col-span-2 lg:m-0 lg:pl-8">
+                    <div className="max-w-md mx-auto px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
+                      <blockquote>
+                        <div>
+                          <svg
+                            className="h-16 opacity-25 text-white w-16"
+                            fill="currentColor"
+                            viewBox="0 0 32 32"
+                            aria-hidden="true"
+                          >
+                            <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+                          </svg>
+                          <p className="font-medium mt-4 text-2xl text-white">
+                            <span className="block mb-4">
+                              We are Redding&apos;s premier cardiology practice.{' '}
+                            </span>
+                            Our cardiology clinic has over 20 years of
+                            experience in providing expert care for a wide range
+                            of cardiovascular conditions. Our team of highly
+                            skilled and experienced medical professionals
+                            specializes in both general and interventional
+                            cardiology, and we are dedicated to delivering
+                            personalized, compassionate care to help you
+                            maintain optimal heart health.{' '}
+                          </p>
+                        </div>
+                        <footer className="mb-6 mt-6">
+                          <p className="font-medium text-base text-white"></p>
+                        </footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                  <div className="relative lg:-my-8">
+                    <div
+                      aria-hidden="true"
+                      className="absolute bg-transparent h-1/2 inset-x-0 top-0 z-0 lg:hidden"
+                    />
+                    <div className="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:h-full lg:p-0">
+                      <div className="aspect-h-6 aspect-w-10 overflow-hidden rounded-xl shadow-xl sm:aspect-h-7 sm:aspect-w-16 lg:aspect-none lg:h-full">
+                        <img
+                          className="object-cover lg:h-full lg:w-full"
+                          src="sundial.jpeg"
+                          alt="The Sundial Bridge in Redding, California"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-transparent mb-20 sm:mt-12 lg:my-24">
+              <div className="bg-red-800 pb-16 pt-16 lg:pb-0 lg:pt-0 lg:relative lg:z-10">
                 <div className="lg:gap-8 lg:grid lg:grid-cols-3 lg:max-w-7xl lg:mx-auto lg:px-8">
                   <div className="relative lg:-my-8">
                     <div
                       aria-hidden="true"
-                      className="absolute bg-white h-1/2 inset-x-0 top-0 z-0 lg:hidden"
+                      className="absolute bg-transparent h-1/2 inset-x-0 top-0 z-0 lg:hidden"
                     />
                     <div className="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:h-full lg:p-0">
                       <div className="aspect-h-6 aspect-w-10 overflow-hidden rounded-xl shadow-xl sm:aspect-h-7 sm:aspect-w-16 lg:aspect-none lg:h-full">
