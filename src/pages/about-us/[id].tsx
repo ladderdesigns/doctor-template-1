@@ -30,8 +30,7 @@ type NextGetStaticPropsCtx = {
 export default function AboutUs({ employee }: Props) {
   return (
     <>
-      {/* <Seo templateTitle='Home' /> */}
-      <Seo />
+      <Seo templateTitle={employee.name} />
 
       <main>
         <section className="">

@@ -33,13 +33,11 @@ export default function OurServices({ services }: Props) {
     services.sort((a, b) => {
       return a.data.id - b.data.id;
     });
-    console.log(services[4].data.desc);
   }, []);
 
   return (
     <>
-      {/* <Seo templateTitle='Home' /> */}
-      <Seo />
+      <Seo templateTitle="Our Services" />
 
       <main>
         <section className="">

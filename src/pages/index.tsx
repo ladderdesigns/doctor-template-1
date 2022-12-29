@@ -7,9 +7,7 @@ import Seo from '@/components/Seo';
 export default function Index() {
   return (
     <>
-      {/* <Seo templateTitle='Home' /> */}
-      <Seo />
-
+      <Seo templateTitle="Home" />
       <main>
         <section className="">
           <Background image="pattern2.png" width={300} height={300}>

@@ -43,8 +43,7 @@ export default function PatientForms() {
 
   return (
     <>
-      {/* <Seo templateTitle='Home' /> */}
-      <Seo />
+      <Seo templateTitle="Patient Forms" />
       <main>
         <section className="">
           <Hero

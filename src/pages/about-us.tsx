@@ -29,8 +29,7 @@ interface Props {
 export default function AboutUs({ employees }: Props) {
   return (
     <>
-      {/* <Seo templateTitle='Home' /> */}
-      <Seo />
+      <Seo templateTitle="About Us" />
 
       <main>
         <section className="">
