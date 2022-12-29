@@ -43,7 +43,7 @@ export default function OurServices({ services }: Props) {
         <section className="">
           <Hero
             title="Our Services"
-            description="Redding’s premier cardiology services"
+            description="Redding’s Premier Cardiology Services"
           />
           <Background image="pattern2.png" width={300} height={300}>
             <div className="py-16 w-full">

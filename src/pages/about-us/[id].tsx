@@ -36,7 +36,7 @@ export default function AboutUs({ employee }: Props) {
         <section className="">
           <Hero
             title="About Us"
-            description="Redding’s premier cardiology services"
+            description="Redding’s Premier Cardiology Services"
           />
           <Background image="pattern2.png" width={300} height={300}>
             <div className="my-auto py-16 shadow-xl w-full">

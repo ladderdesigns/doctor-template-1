@@ -4,7 +4,7 @@ role: Nurse Practitioner
 id: 1
 slug: christopher-hancock
 creds: NP
-shortbio: Christopher Hancock is a nurse practitioner
+shortbio: Christopher Hancock is a nurse practitioner.
 bio: >-
   Christopher Hancock is a highly skilled and compassionate nurse practitioner
   who has been working in the healthcare field for over a decade. He received

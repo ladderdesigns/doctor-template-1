@@ -13,14 +13,14 @@ export default function Index() {
           <Background image="pattern2.png" width={300} height={300}>
             <div className="bg-red-800 py-16 w-full">
               <div className="-pb-24 max-w-md mx-auto px-4 relative sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-                <div className="mt-48 relative md:mt-64 xl:mt-96">
-                  <div className="absolute bg-gradient-to-t from-black h-full opacity-40 rounded-xl via-gray-500 w-full" />
+                <div className="relative">
+                  <div className="absolute h-full rounded-xl via-gray-500 w-full" />
 
-                  {/* <img
-                      src="/team.png"
-                      className="object-cover w-full bg-transparent rounded-xl"
-                      alt=""
-                    /> */}
+                  <img
+                    src="/group-photo.jpeg"
+                    className="bg-transparent object-cover rounded-xl w-full"
+                    alt=""
+                  />
                   <h2 className="absolute bottom-6 font-bold left-4 text-white text-xl md:bottom-12 md:left-8 md:text-3xl lg:text-5xl">
                     {' '}
                     Dr. B.V. Chandramouli{' '}
@@ -60,7 +60,7 @@ export default function Index() {
               </div>
             </div> */}
 
-            <div className="bg-transparent mb-20 mt-20 sm:mt-0 lg:my-24">
+            <div className="bg-transparent mb-20 mt-8 sm:mt-12 lg:my-24">
               <div className="bg-red-800 pb-16 lg:pb-0 lg:relative lg:z-10">
                 <div className="lg:gap-8 lg:grid lg:grid-cols-3 lg:max-w-7xl lg:mx-auto lg:px-8">
                   <div className="relative lg:-my-8">

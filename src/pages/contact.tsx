@@ -16,7 +16,7 @@ export default function Contact() {
         <section className="">
           <Hero
             title="Contact"
-            description="Redding’s premier cardiology services"
+            description="Redding’s Premier Cardiology Services"
           />
           <Background image="pattern2.png" width={300} height={300}>
             <ContactFrom />
