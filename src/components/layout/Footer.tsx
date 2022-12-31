@@ -177,9 +177,9 @@ export default function Footer() {
                   </a>
                 </Link>
                 <br />
-                <Link href="tel:530-123-4567">
+                <Link href="tel:530-244-4471">
                   <a
-                    href="tel:530-123-4567"
+                    href="tel:530-244-4471"
                     className="hover:text-gray-900 text-base text-gray-500 underline"
                   >
                     +1 (530) 244-4471

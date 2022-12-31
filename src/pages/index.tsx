@@ -15,15 +15,22 @@ export default function Index() {
               <div className="-pb-24 max-w-md mx-auto px-4 relative sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="relative">
                   <div className="absolute h-full rounded-xl via-gray-500 w-full" />
-                  <Image
-                    src="/group-photo.jpeg"
-                    className="bg-transparent object-cover rounded-xl shadow-xl w-full"
-                    alt=""
-                    priority={true}
-                    width={1920}
-                    height={1080}
-                    style="background: linear-gradient(0deg, #00000033 14%, #ffffff11 100%)"
-                  />
+                  <div
+                    style={{
+                      background:
+                        'linear-gradient(0deg, #00000033 14%, #ffffff11 100%)',
+                    }}
+                  >
+                    <Image
+                      src="/group-photo.jpeg"
+                      className="bg-transparent object-cover rounded-xl shadow-xl w-full"
+                      alt=""
+                      priority={true}
+                      width={1920}
+                      height={1080}
+                    />
+                  </div>
+
                   <h2 className="absolute bottom-6 font-bold left-4 shadow-xl text-white text-xl md:bottom-12 md:left-8 md:text-3xl lg:text-5xl">
                     {' '}
                     Dr. B.V. Chandramouli{' '}
