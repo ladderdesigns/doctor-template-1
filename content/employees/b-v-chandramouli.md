@@ -1,5 +1,5 @@
 ---
-name: B.V. Chandramouli (disabled)
+name: B.V. Chandramouli
 role: Cardiologist
 id: 0
 slug: bv-chandramouli
@@ -26,5 +26,5 @@ bio: >-
 
   Since 1999, he has worked as a voluntary clinical faculty/Asst. Professor at University of California, Davis. He was awarded teacher of the year in 2017. He has provided high-quality cardiovascular care in the Redding area for almost three decades
 img: img/chandramouli-headshot.jpeg
-active: false
+active: true
 ---

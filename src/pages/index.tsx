@@ -2,6 +2,7 @@ import Image from 'next/image';
 import * as React from 'react';
 
 import Background from '@/components/Background';
+import ExpandablePanel from '@/components/ExpandablePanel';
 import Seo from '@/components/Seo';
 
 export default function Index() {
@@ -42,33 +43,6 @@ export default function Index() {
                 </div>
               </div>
             </div>
-
-            {/* <div className="mb-20 bg-red-800">
-              <div className="py-24 mx-auto max-w-7xl sm:px-2 sm:py-32 lg:px-4">
-                <div className="max-w-2xl px-4 mx-auto lg:max-w-none">
-                  <div className="grid items-center grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-2">
-                    <div>
-                      <h2 className="text-4xl font-bold tracking-tight text-white">
-                        We pride ourselves on treating patients like family.
-                      </h2>
-                      <p className="mt-4 text-white">
-                        We are Redding&apos;s premier cardiology practice. With
-                        over 20 years experience and a comprehensive range of
-                        both invasive and noninvasive options, let us help you
-                        achieve the health that you&apos;ve always wanted.
-                      </p>
-                    </div>
-                    <div className="overflow-hidden bg-gray-100 rounded-lg aspect-h-2 aspect-w-3">
-                      <img
-                        src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3072&q=80"
-                        alt=""
-                        className="object-cover object-center"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
 
             <div className="bg-transparent mb-20 sm:mt-12 lg:my-24">
               <div className="bg-red-800 pb-16 pt-1 lg:pb-0 lg:pt-0 lg:relative lg:z-10">

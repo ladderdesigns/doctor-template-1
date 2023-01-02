@@ -33,7 +33,7 @@ export default function OurServices({ services }: Props) {
     services.sort((a, b) => {
       return a.data.id - b.data.id;
     });
-  }, []);
+  }, [services]);
 
   return (
     <>
