@@ -60,7 +60,7 @@ export default function PatientForms() {
                   <dl className="divide-gray-200 divide-y mt-6 space-y-6">
                     {items.map((file) => (
                       <Disclosure as="div" key={file.id} className="pt-6">
-                        {({ open }) => (
+                        {() => (
                           <>
                             <dt className="text-lg" id={file.name}>
                               <Disclosure.Button className="flex items-start justify-between text-gray-400 text-left w-full">
@@ -98,7 +98,7 @@ export default function PatientForms() {
                   <dl className="divide-gray-200 divide-y mt-6 space-y-6">
                     {items2.map((file) => (
                       <Disclosure as="div" key={file.id} className="pt-6">
-                        {({ open }) => (
+                        {() => (
                           <>
                             <dt className="text-lg" id={file.name}>
                               <Disclosure.Button className="flex items-start justify-between text-gray-400 text-left w-full">
