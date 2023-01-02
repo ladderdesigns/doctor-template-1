@@ -199,7 +199,7 @@ export default function Footer() {
         </div>
         <div className="border-gray-200 border-t mt-12 pt-8">
           <p className="text-base text-gray-400 xl:text-center">
-            &copy; Created by{` `}2022{` `}
+            Created by{' '}
             <Link href="https://ladderdesigns.co">
               <a
                 className="font-bold hover:text-gray-500 underline"
@@ -207,8 +207,8 @@ export default function Footer() {
               >
                 Ladder Designs
               </a>
-            </Link>
-            . All rights reserved.
+            </Link>{' '}
+            &copy; {new Date().getFullYear()}. All rights reserved.
           </p>
         </div>
       </div>
