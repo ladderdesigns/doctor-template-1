@@ -2,7 +2,6 @@ import Image from 'next/image';
 import * as React from 'react';
 
 import Background from '@/components/Background';
-import ExpandablePanel from '@/components/ExpandablePanel';
 import Seo from '@/components/Seo';
 
 export default function Index() {
