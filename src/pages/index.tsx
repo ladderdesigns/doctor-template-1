@@ -87,7 +87,7 @@ export default function Index() {
                     <div className="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:h-full lg:p-0">
                       <div className="aspect-h-6 aspect-w-10 overflow-hidden rounded-xl shadow-xl sm:aspect-h-7 sm:aspect-w-16 lg:aspect-none lg:h-full">
                         <img
-                          className="object-cover lg:h-full lg:w-full"
+                          className="object-cover rounded-xl lg:h-full lg:w-full"
                           src="sundial.jpeg"
                           alt="The Sundial Bridge in Redding, California"
                         />
