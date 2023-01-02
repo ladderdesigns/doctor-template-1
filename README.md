@@ -1,7 +1,7 @@
 
 # drchandramouli.com
 
-*The public-facing website of Dr. B.V. Chandramouli's Cardiology Practice* 
+*The public-facing website for the cardiology practice of Dr. B.V. Chandramouli* 
 
 
 ## Table of Contents
