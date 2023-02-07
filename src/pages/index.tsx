@@ -14,13 +14,8 @@ export default function Index() {
             <div className="bg-gradient-to-br from-red-700 mb-20 py-16 to-red-900 w-full">
               <div className="-pb-24 max-w-md mx-auto px-4 relative sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="relative">
-                  <div className="absolute h-full rounded-xl via-gray-500 w-full" />
-                  <div
-                    style={{
-                      background:
-                        'linear-gradient(0deg, #00000033 14%, #ffffff11 100%)',
-                    }}
-                  >
+                  <div className="absolute h-full rounded-xl shadow-sm via-gray-500 w-full" />
+                  <div>
                     <Image
                       src="/group-photo.jpeg"
                       className="bg-transparent object-cover rounded-xl shadow-xl w-full"
@@ -85,11 +80,12 @@ export default function Index() {
                     />
                     <div className="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:h-full lg:p-0">
                       <div className="aspect-h-6 aspect-w-10 overflow-hidden rounded-xl shadow-xl sm:aspect-h-7 sm:aspect-w-16 lg:aspect-none lg:h-full">
-                        <img
+                        <Image
                           className="object-cover rounded-xl lg:h-full lg:w-full"
-                          src="sundial2.jpeg"
+                          src="/sundial.jpeg"
+                          layout="fill"
                           alt="The Sundial Bridge in Redding, California"
-                        />
+                        ></Image>
                       </div>
                     </div>
                   </div>
@@ -107,11 +103,12 @@ export default function Index() {
                     />
                     <div className="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:h-full lg:p-0">
                       <div className="aspect-h-6 aspect-w-10 overflow-hidden rounded-xl shadow-xl sm:aspect-h-7 sm:aspect-w-16 lg:aspect-none lg:h-full">
-                        <img
-                          className="object-cover lg:h-full lg:w-full"
+                        <Image
+                          className="object-cover rounded-xl lg:h-full lg:w-full"
                           src="https://images.unsplash.com/photo-1631815587646-b85a1bb027e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGF0aWVudHxlbnwwfDF8MHx8&auto=format&fit=crop&w=800&q=60"
-                          alt=""
-                        />
+                          layout="fill"
+                          alt="doctor office picture"
+                        ></Image>
                       </div>
                     </div>
                   </div>

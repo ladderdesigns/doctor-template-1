@@ -24,7 +24,7 @@ bio: >-
   From 1997 - 1998 he completed sub-speciality fellowship in interventional cardiology at Albert Einstein. Here, he received extensive training in performing complex cardiovascular procedures using percutaneous techniques. In 1999, he was trained in certified in the implantation of pacemakers and defibrillators. 
 
 
-  Since 1999, he has worked as a voluntary clinical faculty/Asst. Professor at University of California, Davis. He was awarded teacher of the year in 2017. He has provided high-quality cardiovascular care in the Redding area for almost three decades
+  Since 1999, he has worked as a voluntary clinical faculty and assistant professor at University of California, Davis.
 img: img/chandramouli-headshot.jpeg
 active: true
 ---
