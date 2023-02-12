@@ -9,7 +9,7 @@ const defaultMeta = {
   siteName: `Dr. B.V. Chandramouli`,
   description: `Dr. B.V. Chandramouli, MD is an Interventional Cardiology Specialist in Redding, CA.`,
   url: `https://drchandramouli.com`,
-  image: `https://theodorusclarence.com/favicon/large-og.jpg`,
+  image: `https://drchandramouli.com/logo2.svg`,
   type: `website`,
   robots: `follow, index`,
 };

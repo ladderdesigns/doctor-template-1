@@ -20,8 +20,9 @@ interface Props {
         name: string;
         id: number;
         shortdesc: string;
+        desc: string;
         link: string;
-        readmore: string;
+        video: string;
       };
     },
   ];
@@ -32,12 +33,11 @@ export default function OurServices({ services }: Props) {
     services.sort((a, b) => {
       return a.data.id - b.data.id;
     });
-  }, []);
+  }, [services]);
 
   return (
     <>
-      {/* <Seo templateTitle='Home' /> */}
-      <Seo />
+      <Seo templateTitle="Our Services" />
 
       <main>
         <section className="">
@@ -77,25 +77,26 @@ export default function OurServices({ services }: Props) {
                                 </span>
                               </Disclosure.Button>
                             </dt>
-                            <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                              <p className="text-base text-gray-500">
-                                {service.data.shortdesc}
+                            <Disclosure.Panel as="dd" className="my-2 pr-12">
+                              <p className="pb-2 text-base text-gray-500 whitespace-pre-wrap">
+                                {service.data.desc}
                               </p>
-                              <Link href={service.data.readmore}>
-                                <a className="text-blue-500 underline">
-                                  Read more
-                                </a>
-                              </Link>
                               {/* Only show the video link if a video exists for that service */}
                               {service.data.link && (
-                                <div className="aspect-h-9 aspect-w-16 mt-4">
-                                  <iframe
-                                    src={service.data.link}
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
-                                  ></iframe>
-                                </div>
+                                <Link href={service.data.link}>
+                                  <a className="pr-4 text-blue-500 underline">
+                                    Read more
+                                  </a>
+                                </Link>
+                              )}
+
+                              {/* Only show the video link if a video exists for that service */}
+                              {service.data.video && (
+                                <Link href={service.data.video}>
+                                  <a className="text-blue-500 underline">
+                                    Watch video
+                                  </a>
+                                </Link>
                               )}
                             </Disclosure.Panel>
                           </>
@@ -114,11 +115,11 @@ export default function OurServices({ services }: Props) {
 }
 
 export async function getStaticProps() {
-  const files = fs.readdirSync(`${process.cwd()}/public/content/our-services`);
+  const files = fs.readdirSync(`${process.cwd()}/content/our-services`);
 
   const services = files.map((filename) => {
     const markdownWithMetadata = fs
-      .readFileSync(`${process.cwd()}/public/content/our-services/${filename}`)
+      .readFileSync(`${process.cwd()}/content/our-services/${filename}`)
       .toString();
 
     const { data } = matter(markdownWithMetadata);

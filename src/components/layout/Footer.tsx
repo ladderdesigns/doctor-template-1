@@ -162,9 +162,9 @@ export default function Footer() {
                 <address className="mb-8 mt-4 text-base text-gray-500">
                   1555 East St STE 100 Redding, California 96001
                   <br />
-                  <p className="mt-4">
-                    Mon - Th: 8 AM - 12:30 PM, 1:30 PM - 4:30 PM{' '}
-                  </p>
+                  <p className="mt-4">Mon - Thu:</p>
+                  <p> 8 AM - 12:30 PM, </p>
+                  <p> 1:30 PM - 4:30 PM </p>
                   <p>Fri: 8 AM - 12 PM </p>
                   <p>Sat - Sun: Closed </p>
                 </address>
@@ -177,9 +177,9 @@ export default function Footer() {
                   </a>
                 </Link>
                 <br />
-                <Link href="tel:530-123-4567">
+                <Link href="tel:530-244-4471">
                   <a
-                    href="tel:530-123-4567"
+                    href="tel:530-244-4471"
                     className="hover:text-gray-900 text-base text-gray-500 underline"
                   >
                     +1 (530) 244-4471
@@ -191,7 +191,7 @@ export default function Footer() {
               <iframe
                 title="map with directions"
                 frameBorder="0"
-                className="h-64 overflow-hidden w-64"
+                className="h-72 overflow-hidden w-72"
                 src="https://www.google.com/maps/embed/v1/place?q=1555+East+St+Redding,+California+96001&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
               ></iframe>
             </div>
@@ -199,7 +199,7 @@ export default function Footer() {
         </div>
         <div className="border-gray-200 border-t mt-12 pt-8">
           <p className="text-base text-gray-400 xl:text-center">
-            &copy; Created by{` `}2022{` `}
+            Created by{' '}
             <Link href="https://ladderdesigns.co">
               <a
                 className="font-bold hover:text-gray-500 underline"
@@ -207,8 +207,8 @@ export default function Footer() {
               >
                 Ladder Designs
               </a>
-            </Link>
-            . All rights reserved.
+            </Link>{' '}
+            &copy; {new Date().getFullYear()}. All rights reserved.
           </p>
         </div>
       </div>

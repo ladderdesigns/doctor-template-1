@@ -1,5 +1,5 @@
 {
-  "name": "doctor-template-1",
+  "name": "drchandramouli.com",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "next lint",
     "lint:fix": "eslint src --fix && yarn format",
     "lint:strict": "eslint --max-warnings=0 src",
+    "type-check": "tsc",
     "tsc": "tsc --noEmit",
     "test:watch": "jest --watch",
     "test": "jest",
@@ -17,10 +18,11 @@
     "release": "standard-version",
     "push-release": "git push --follow-tags origin main",
     "postbuild": "next-sitemap",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "dev-cms": "npx netlify-cms-proxy-server"
   },
   "dependencies": {
-    "@headlessui/react": "1.4.2",
+    "@headlessui/react": "1.7.7",
     "@heroicons/react": "1.0.5",
     "clsx": "^1.1.1",
     "next": "12.1.0",

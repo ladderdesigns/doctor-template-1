@@ -10,9 +10,7 @@ import Hero from '../components/Hero';
 export default function Contact() {
   return (
     <>
-      {/* <Seo templateTitle='Home' /> */}
-      {/*  */}
-      <Seo />
+      <Seo templateTitle="Contact" />
 
       <main>
         <section className="">

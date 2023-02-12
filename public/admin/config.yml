@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-local_backend: true
+local_backend: false 
 media_folder: public/img
 public_folder: img
 collections:
@@ -10,13 +10,15 @@ collections:
     folder: 'content/employees'
     create: true
     identifier_field: name
+    sortable_fields: ['name','id']
     fields:
       - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Role', name: 'role', widget: 'string' }
       - { label: 'ID', name: 'id', widget: 'number' }
       - { label: 'Slug', name: 'slug', widget: 'string' }
       - { label: 'Credentials', name: 'creds', widget: 'string' }
-      - { label: 'Biography', name: 'bio', widget: 'markdown' }
       - { label: 'Short Biography', name: 'shortbio', widget: 'string' }
+      - { label: 'Biography', name: 'bio', widget: 'markdown' }
       - { label: 'Image', name: 'img', widget: 'image' }
       - { label: 'Active', name: 'active', widget: 'boolean' }
   - label: 'Our Services'
@@ -24,12 +26,12 @@ collections:
     folder: 'content/our-services'
     create: true
     identifier_field: name
-    sortable_fields: ['id', 'ID']
+    sortable_fields: ['id']
     fields:
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'ID', name: 'id', widget: 'number' }
-      - { label: 'Link', name: 'link', widget: 'string' }
-      - { label: 'Read more', name: 'readmore', widget: 'string' }
+      - { label: 'Info Link', name: 'link', widget: 'string', required: false }
+      - { label: 'Video Link', name: 'video', widget: 'string', required: false }
       - { label: 'Short Description', name: 'shortdesc', widget: 'markdown' }
       - {
           label: 'Description',
