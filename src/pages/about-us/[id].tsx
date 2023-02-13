@@ -1,7 +1,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import Background from '../../components/Background';
 import Hero from '../../components/Hero';
@@ -25,24 +25,12 @@ type NextGetStaticPropsCtx = {
     id: string;
   };
   preview?: boolean;
-  // previewDate?: any;
 };
 
 export default function AboutUs({ employee }: Props) {
-  const [employeeBioBlurbs, setEmployeeBioBlurbs] = useState<string[]>([]);
-
-  useEffect(() => {
-    // useState was chosen here because there is an issue about splitting the employee.bio based one whether it is passed in as a string or array
-    // I tried both ways and splitting both before and after getStaticProps completes
-    // this is a hacky solution, but it works for now, we can always come back later
-    const result = employee.bio.split('\n');
-    setEmployeeBioBlurbs(result);
-  }, [employee.bio]);
-
   return (
     <>
-      {/* <Seo templateTitle='Home' /> */}
-      <Seo />
+      <Seo templateTitle={employee.name} />
 
       <main>
         <section className="">
@@ -58,7 +46,7 @@ export default function AboutUs({ employee }: Props) {
                     <h2 className="font-semibold text-3xl tracking-tight sm:text-4xl">
                       Our team
                     </h2>
-                    <p className="text-gray-500 text-xl">
+                    <p className="text-gray-600 text-xl">
                       Our mission is to improve cardiac health through
                       integrated and compassionate patient care. Come let our
                       family take care of yours.
@@ -73,27 +61,27 @@ export default function AboutUs({ employee }: Props) {
                         <div className="space-y-4">
                           <div className="aspect-h-2 aspect-w-3">
                             <Image
-                              src={employee.img}
+                              src={'/' + employee.img}
                               layout="fill"
                               alt={employee.name}
                               objectFit="cover"
                             />
                           </div>
                           <div className="font-medium leading-6 space-y-1 text-lg">
-                            <h3 className="text-2xl">{employee.name}</h3>{' '}
-                            <span className="text-gray-600">
-                              {employee.creds}
-                            </span>
-                            <p className="text-gray-600">{employee.role}</p>
+                            <h3 className="text-2xl text-black">
+                              {employee.name}{' '}
+                              <span className="text-base text-gray-600">
+                                {employee.creds}
+                              </span>
+                            </h3>{' '}
+                            <p className="text-black text-lg">
+                              {employee.role}
+                            </p>
                           </div>
                           <div className="text-lg">
-                            {employeeBioBlurbs.map((blurb, index) => (
-                              <>
-                                <p className="mb-3 text-gray-500" key={index}>
-                                  {blurb}
-                                </p>
-                              </>
-                            ))}
+                            <p className="mb-3 text-gray-600 whitespace-pre-wrap">
+                              {employee.bio}
+                            </p>
                           </div>
                         </div>
                       </li>
@@ -110,11 +98,11 @@ export default function AboutUs({ employee }: Props) {
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync(`${process.cwd()}/public/content/employees`);
+  const files = fs.readdirSync(`${process.cwd()}/content/employees`);
 
   const employees = files.map((filename) => {
     const markdownWithMetadata = fs
-      .readFileSync(`${process.cwd()}/public/content/employees/${filename}`)
+      .readFileSync(`${process.cwd()}/content/employees/${filename}`)
       .toString();
 
     const { data } = matter(markdownWithMetadata);
@@ -135,7 +123,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: NextGetStaticPropsCtx) {
   const slug = params.id;
   const markdownWithMetadata = fs
-    .readFileSync(`${process.cwd()}/public/content/employees/${slug}.md`)
+    .readFileSync(`${process.cwd()}/content/employees/${slug}.md`)
     .toString();
   const { data } = matter(markdownWithMetadata);
 
