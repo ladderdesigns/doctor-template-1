@@ -82,7 +82,7 @@ export default function Index() {
                       <div className="aspect-h-6 aspect-w-10 overflow-hidden rounded-xl shadow-xl sm:aspect-h-7 sm:aspect-w-16 lg:aspect-none lg:h-full">
                         <Image
                           className="object-cover rounded-xl lg:h-full lg:w-full"
-                          src="/sundial2.jpeg"
+                          src="/sundial.jpeg"
                           layout="fill"
                           alt="The Sundial Bridge in Redding, California"
                         ></Image>
